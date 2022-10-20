@@ -1,0 +1,101 @@
+.header{
+    position: absolute;
+    width: 1240px;
+    height: 68px;
+    left: 100px;
+    top: 40px;
+    
+}
+.nav{
+    position: absolute;
+    left: 75.08%;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
+}
+
+.nav-accueil{
+    position: absolute;
+    left: 71.6%;
+    right: 18.96%;
+    top: 5.57%;
+    bottom: 91.11%;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    /* or 34px */
+    
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    
+    color: #FF6060;
+}
+
+.nav-apropos{
+position: absolute;
+left: 85%;
+right: 6.94%;
+top: 5.57%;
+bottom: 91.11%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+/* or 34px */
+
+display: flex;
+align-items: flex-end;
+text-align: right;
+
+color: #FF6060;
+}
+
+.logo{
+    position: absolute;
+    left: 6.94%;
+    right: 78.45%;
+    top: 3.91%;
+    bottom: 89.45%;
+
+}
+.group{
+    position: absolute;
+    left: 11.13%;
+    right: 85.68%;
+    top: 5.34%;
+    bottom: 89.45%;
+    
+}
+.vectorA{
+    position: absolute;
+    left: 18.71%;
+    right: 78.45%;
+    top: 5.32%;
+    bottom: 89.98%;
+    
+    background: #FF6060;
+}
+.vectorK{
+    position: absolute;
+left: 6.94%;
+right: 89.28%;
+top: 3.91%;
+bottom: 90.01%;
+
+background: #FF6060;
+}
+.vectorS{
+    position: absolute;
+    left: 15.19%;
+    right: 82.07%;
+    top: 5.34%;
+    bottom: 89.98%;
+    
+    background: #FF6060;
+}
