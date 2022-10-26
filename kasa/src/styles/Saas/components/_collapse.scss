@@ -1,0 +1,135 @@
+@import '../utils//mixins';
+
+
+//Collapse Component
+.dropdown{
+    height: 30px;
+    width: 87%;
+    left: 20px;
+    top: 326px;
+    border-radius: 0px;
+    margin-top: 19px;
+    
+    
+    @include Desktop{
+        width: 70%;
+        height: auto;
+        left: 208px;
+        top: 625px;
+        margin-top: 30px;
+        margin-bottom: -30px;
+    }
+
+    &__title{
+        font-size: 13px;
+        color: #FFFFFF;
+        text-align: left;
+        line-height: 142.6%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include Desktop{
+            font-size: 24px;
+        }
+    }
+    &__closed{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5px;
+        background-color: $color-primary;
+        border: hidden;
+        margin-bottom: 20px;
+        cursor: pointer;
+        @include Desktop{
+            height: 47px;
+        }
+        
+    }
+    
+    svg{
+        height: 100%;
+        width: 13px;
+        left: 1.6px;
+        top: 14px;
+        border-radius: 0px;
+        color: #FFFFFF;
+        transform: rotate(0deg);
+    }
+    &__open{
+        
+        align-items: center;
+        height: 30px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5px;
+        background-color: $color-primary;
+        border: hidden;
+        margin-bottom: 160px;
+        cursor: pointer;
+        @include Desktop{
+            height: 47px;
+        }
+        
+        
+        &__description{
+            top: 30px;
+            width: 100%;
+            background-color: $color-secondary;
+            margin-top: -160px;
+            padding-left: 20px;
+            padding-right: 20px;
+            z-index: 2;
+            border-radius: 0 0 5px 5px;
+            height: auto;
+            @include Desktop{
+                
+            }
+            }
+        &__text{
+            padding-top: 15px;
+            padding-bottom: 30px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 142.6%;
+            @include Desktop{
+                font-size: 24px;
+            }
+        }
+        
+}
+    
+    
+}
+/*
+.dropdown-open{
+        top: 30px;
+        width: 100%;
+        background-color: $color-secondary;
+        margin-top: -20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        z-index: 2;
+        border-radius: 0 0 5px 5px;
+        height: 100%;
+
+        &__description{
+            top: 30px;
+            width: 100%;
+            background-color: $color-secondary;
+            margin-top: -20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            z-index: 2;
+            border-radius: 0 0 5px 5px;
+            height: 100%;
+            }
+}*/

@@ -1,0 +1,62 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+
+.error {
+    height: 100%;
+    text-align: center;
+    &__404 {
+        left: 88px;
+        top: 262px;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 137px;
+        letter-spacing: 0em;
+        font-family: $main-font;
+        color: $color-primary;
+        margin-top: 80px;
+        margin-bottom: 11px;
+       @include Desktop {
+          font-size: 288px;
+          margin-bottom: 66px;
+          margin-top: 240px;
+
+       }
+    }
+    &__title {
+        margin: auto;
+        height: 52px;
+        width: 260px;
+        left: 57px;
+        top: 372px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        margin-bottom: 133px;
+        @include Desktop {
+            font-size: 36px;
+            width: 872px;
+            line-height: 52px;
+            margin-bottom: 182px;
+        }
+    }
+    &__backText {
+       
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: underline;
+        font-family: $main-font;
+        height: 20px;
+        width: 221px;
+        left: 76px;
+        top: 557px;
+        @include Desktop {
+            font-size: 18px;
+            width: 284px;
+        }
+    }
+ }
+
+
+

@@ -1,31 +1,20 @@
-import '../../../styles/Header.css'
 import React from 'react'
+import '../../../styles/Saas/layouts/_header.scss'
 import { Link } from 'react-router-dom'
-import logo from '../../../assets/logo/Group.png'
-import vectorA from '../../../assets/logo/vectorA.svg'
-//import vectorK from '../../../assets/logo/vectorK.png'
-//import vectorS from '../../../assets/logo/vectorS.png'
- 
-function Header() {
+import logoHeader from '../../../assets/logoHeader.png'
+
+
+export default function Header() {
+    const logo = <img src={logoHeader} alt='logo kasa'/>
     return (
-        <div className='header'>
-            <nav>
-                <ul className='nav'>
-                    <li className='nav-accueil'><Link to="/">Accueil</Link></li>
-                    <li className='nav-apropos'><Link to="/apropos">À Propos</Link></li>
-                </ul>
+        <header className='header'>
+            <Link to='/'  className='header__logo'>
+                {logo}
+            </Link>
+            <nav className='header__nav'>
+            <Link  to="/"  className='header__link'>Accueil</Link>
+            <Link  to="/apropos"  className='header__link'>A Propos</Link>
             </nav>
-            <div className='logo'>
-                <div className='group'>
-                    <img src ={logo} alt = 'kasa' />
-                </div>
-                
-                <p className='vectorK'>K</p>
-                <p className='vectorS'>s</p>
-                <p img src ={vectorA} className='vectorA'></p>
-            </div> 
-        </div>
+        </header>
     )
 }
-
-export default Header

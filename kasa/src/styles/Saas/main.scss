@@ -1,0 +1,37 @@
+@import './utils/mixins';
+@import './utils/variables';
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $main-font;
+    height: 100vh;
+    width: auto;
+    font-size: 12px;
+    background: #FFFFFF;
+    margin: 4%;
+    @include Desktop{
+       font-size: 18px;
+       margin: 0;
+    }
+    
+ }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h3,
+a,
+p,
+div {
+   color: $color-primary;
+   }
+
+a{
+    cursor: pointer;
+}

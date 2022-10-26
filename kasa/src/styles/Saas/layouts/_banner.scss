@@ -1,0 +1,75 @@
+@import '../utils/mixins';
+
+
+.banner{
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+       url('../../../assets/homeImg.png');
+    background-position: center;
+    display: table-cell; /* comportement visuel de cellule */
+    vertical-align: middle;
+    width: 335px;
+    height: 111px;
+    text-align: left;
+    border-radius: 10px;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    margin-bottom: 22px;
+    @include Desktop{
+        justify-content: center;
+        width: 100%;
+        height: 223px;
+    }
+    
+
+    &__title{
+        margin-left: 20px;
+        line-height: 24px;
+        font-size: 24px;
+        font-weight: 500;
+        height: 48px;
+        width: 213px;
+        left: 36px;
+        top: 114px;
+        @include Desktop{
+            height: auto;
+            width: auto;
+            left: 373px;
+            top: 249px;
+            font-size: 48px;
+            vertical-align: center;
+
+        }
+       
+        
+    }
+}
+
+.bannerAbout{
+    margin-top: 17px;
+    width: 88%;
+    height: 223px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    >h1{
+        display: none;
+    }
+    @include Desktop{
+        width: 86%;
+        margin-top: 44px;
+    }
+    >img{
+        object-position: 50%;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(70%) saturate(140%);
+        @include Desktop{
+            border-radius: 25px;
+        }
+    }
+}

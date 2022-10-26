@@ -1,0 +1,54 @@
+@import '../utils/mixins';
+
+/* .Thumb */
+.Thumb {
+    width: 100%;
+    padding: 0;
+    @include Desktop {
+        height: 100%;
+        }
+    &__Rectangle2 {
+        position: relative;
+        height: 255px;
+        
+        overflow: hidden;
+        width: 335px;
+        border-radius: 10px;
+        @include Desktop{
+            width: 340px;
+            height: auto;
+        }
+        
+        }
+    &__imgLogement{
+        position: relative;
+        height: 255px;
+        width: 335px;
+        z-index: 1;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: brightness(70%) saturate(140%);
+        transition: 0.3s;
+        &:hover {
+            filter: brightness(100%) saturate(100%);
+            transition: 0.3s;
+        }
+        @include Desktop{
+            height: 340px;
+            width: 340px;
+        }
+    }
+    &__titleLocation {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        bottom: -3%;
+        left: 5%;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+ }
+
+

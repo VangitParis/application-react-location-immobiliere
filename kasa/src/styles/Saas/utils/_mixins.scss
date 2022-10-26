@@ -1,0 +1,18 @@
+@import './variables';
+
+
+
+@mixin Desktop{
+    @media screen and (min-width:map-get($breakpoints, Desktop)){
+        @content;
+    }
+        
+}
+@mixin DesktopS{
+    @media screen and (min-width:map-get($breakpoints, DesktopS)){
+        @content;
+    }
+        
+}
+
+
