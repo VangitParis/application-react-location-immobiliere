@@ -1,0 +1,21 @@
+@import '../utils/variables';
+
+.star {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-end;
+    padding-bottom: 5px;
+    &--completed {
+       color: $color-primary;
+    }
+    &--noCompleted {
+       color: $color-secondary;
+    }
+    &--noCompleted,
+    &--yes {
+       margin-left: 10px;
+       > svg {
+          width: 90%;
+       }
+    }
+ }

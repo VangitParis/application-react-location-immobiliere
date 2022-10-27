@@ -3,17 +3,15 @@
 
 //import { func } from "prop-types"
 //import { useState, useEffect,useFetch, axios } from "react";
-//import { useParams, useSearchParams } from "react-router-dom";
-//mport products from '../../datas/locationslist.json'
-//import Fetch from "../../utils/hooks";
-import '../../styles/Saas/pages/_details.scss'
-import SingleLocation from '../../components/Hooks'
+import React from 'react'
+import SingleLocation from '../../components/Utils/getSingleLocation'
+import Description from '../../components/Utils/SingleLocationDescription'
 
-export default function Details(pictures, id, title) {
+export default function Details() {
   return (
     <main>
-      <SingleLocation key={id} pictures={pictures} />
-     
+      <SingleLocation />
+      <Description />
     </main>
   )
 }

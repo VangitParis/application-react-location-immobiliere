@@ -1,5 +1,5 @@
-import accomodations from '../../datas/locationslist.json'
-import Carousel from '../Carousel'
+import accomodations from '../../../datas/locationslist.json'
+import Carousel from '../../Carousel'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
 import exports from 'react'
@@ -25,21 +25,9 @@ export default function SingleLocation() {
   const locationById = accomodations.find((location) => location.id === id)
   console.log(locationById)
 
-  
   return (
     <section>
-      {locationById && (
-        <div>
-          <Carousel 
-          key={locationById.id} 
-          pictures={locationById.pictures}
-          />
-          
-
-          
- 
-        </div>
-      )}
+      <Carousel key={locationById.id} pictures={locationById.pictures} />
     </section>
   )
 }

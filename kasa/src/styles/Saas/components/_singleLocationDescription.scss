@@ -1,0 +1,48 @@
+@import '../utils/mixins';
+
+.singleLocation{
+
+    &__title{
+        height: 46px;
+        width: 335px;
+        left: 20px;
+        top: 364px;
+        border-radius: nullpx;
+        
+    }
+    &__location{
+        height: 22px;
+        width: 323px;
+        left: 20px;
+        top: 415px;
+        border-radius: nullpx;
+        
+    }
+    &__tags{
+        height: 18px;
+        width: 84px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5px;
+        
+        background: #FF6060;
+        border-radius: 5px;
+    }
+    &__rating{
+        height: 18px;
+        width: 98px;
+        left: 20px;
+        top: 489px;
+        border-radius: 0px;
+        >svg{
+            height: 15px;
+            width: 15px;
+            left: 1.5px;
+            top: 1.5px;
+            border-radius: 0px;
+
+        }
+
+
+    }
+}
