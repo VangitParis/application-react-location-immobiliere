@@ -19,14 +19,7 @@
         
     }
     &__tags{
-        height: 18px;
-        width: 84px;
-        left: 0px;
-        top: 0px;
-        border-radius: 5px;
         
-        background: #FF6060;
-        border-radius: 5px;
     }
     &__rating{
         height: 18px;
@@ -43,6 +36,37 @@
 
         }
 
+
+    }
+    
+}
+.host{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 135.5px;
+    left: 219px;
+    top: 481px;
+    &__name{
+        display: flex;
+        flex-wrap: wrap;
+        height: 33px;
+        width: 40px;
+        left: 0px;
+        top: 0px;
+       
+        
+    }
+    >img{
+        height: 32px;
+        width: 32px;
+        left: 103.5px;
+        top: 0.5px;
+      
+        border-radius: 50%;
+       
+        background: #C4C4C4;
 
     }
 }

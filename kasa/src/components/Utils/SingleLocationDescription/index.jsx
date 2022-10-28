@@ -5,7 +5,8 @@ import { useParams } from 'react-router-dom'
 import exports from 'react'
 import Dropdowns from '../../Collapse'
 import Rating from '../Rating'
-
+import Tags from '../Tags'
+import '../../../styles/Saas/components/_singleLocationDescription.scss'
 export default function SingleLocationDescription() {
   const { id } = useParams()
   const getData = () => {
@@ -22,17 +23,21 @@ export default function SingleLocationDescription() {
     getData()
   }, [])
   const locationById = accomodations.find((location) => location.id === id)
-  console.log(locationById)
+  console.log(locationById.tag)
   return (
     <section>
       <article className="singleLocation">
         <h1 className="singleLocation__title">{locationById.title}</h1>
         <p className="singleLocation__location">{locationById.location}</p>
-        <div className="singleLocation__tags">{locationById.tags}</div>
+        <div className="singleLocation__tags" >
+        {locationById.tags.map((tag, index) => (
+              <Tags key={index} getTag={tag} />
+            ))}
+        </div>
         <Rating />
-        <div className="host">
-          <p>{locationById.host.name}</p>
-          <img src={locationById.host.picture} alt="Hébergeur" />
+        <div  className="host">
+          <p className='host__name'>{locationById.host.name}  </p>
+          <img src={locationById.host.picture} alt="Hébergeur"/>
         </div>
       </article>
 
