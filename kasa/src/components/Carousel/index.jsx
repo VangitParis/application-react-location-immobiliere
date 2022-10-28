@@ -11,9 +11,9 @@ import { useState } from 'react';
 
   
 export default function Carousel({pictures}){
-
+ const [item, setItem]=useState(0)
   
-  const [item, setItem]=useState(0)
+ 
   return(
         <div className="carousel">
 

@@ -1,8 +1,13 @@
-.Card__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   > p {
-    margin-top: 5px;
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.details{
+  &__main{
+    height: 516px;
+    width: 100%;
+    left: 20px;
+    margin-top: 60px;
+    
+
   }
 }

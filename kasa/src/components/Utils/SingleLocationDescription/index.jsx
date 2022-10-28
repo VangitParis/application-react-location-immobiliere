@@ -1,29 +1,20 @@
 import React from 'react'
 import accomodations from '../../../datas/locationslist.json'
-import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import exports from 'react'
 import Dropdowns from '../../Collapse'
 import Rating from '../Rating'
 import Tags from '../Tags'
 import '../../../styles/Saas/components/_singleLocationDescription.scss'
+
+
+
+
 export default function SingleLocationDescription() {
   const { id } = useParams()
-  const getData = () => {
-    exports.get = (res) => {
-      accomodations
-        .find(res.params.id)
-        .then((locations) => {
-          res.json(locations)
-        })
-        .catch((err) => res.status(400).send(err))
-    }
-  }
-  useEffect(() => {
-    getData()
-  }, [])
   const locationById = accomodations.find((location) => location.id === id)
-  console.log(locationById.tag)
+  //console.log(locationById.tag)
+
+
   return (
     <section>
       <article className="singleLocation">
