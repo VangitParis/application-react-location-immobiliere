@@ -1,10 +1,14 @@
 @import '../utils/mixins';
 
 .carousel {
-   width: 335px;
-   height: auto;
-   position: relative;
-   border-radius: 10px;
+  width: 335px;
+  height: 255px;
+  left:20px;
+  top: 8px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
   &__img {
     position: relative;
     height: 255px;
@@ -23,33 +27,39 @@
     }
   }
   &__button {
-   display: flex;
-    height: 24x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
     width: 24px;
     left: 24px;
     top: 140px;
-    border-radius: 0px;
-
+    z-index: 1;
+    background-color: transparent;
+    border: none;
     z-index: 2;
     &__Left {
-      left: 5px;
-      top: 130px;
       z-index: 2;
+      margin-right: -24px;
       @include Desktop {
         top: 200px;
       }
     }
     &__Right {
-      left: 299px;
-      top: 130px;
-      z-index: 2;
+      z-index: 1;
+      margin-left: -24px;
+
       @include Desktop {
         top: 200px;
         left: 305px;
       }
     }
     > svg {
-      font-size: 20px;
+      height: 20px;
+      width: 12px;
+      left: 17.5px;
+      top: 22px;
+      color: #FFFFFF;
     }
     @include Desktop {
       font-size: 20px;
