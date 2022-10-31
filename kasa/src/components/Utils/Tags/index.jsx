@@ -4,9 +4,9 @@ import '../../../styles/Saas/components/_tags.scss'
 export default function Tags({getTag}){
     return(
        
-        <ul  className="tags">
+        <ul  className="tag">
            
-                <p  className="tags__text">
+                <p  className="tag__text">
                     {getTag}
                 </p>
                     

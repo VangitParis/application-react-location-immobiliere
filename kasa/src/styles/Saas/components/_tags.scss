@@ -1,11 +1,19 @@
 @import '../utils/variables';
-.tags{
-    height: 18px;
-    width: 84px;
+.tag{
+    text-align: center;
+    color: white;
+    height: 25px;
     border-radius: 5px;
-    background: #FF6060;
-    border-radius: 5px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    background-color: $color-primary;
     &__text{
         color: $color-secondary;
+        font-size: 10px;  
     }
 }

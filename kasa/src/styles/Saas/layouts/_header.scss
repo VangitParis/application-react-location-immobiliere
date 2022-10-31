@@ -5,7 +5,7 @@
     .header{
         display: flex;
         justify-content: space-between;
-        margin-left: 20px;
+        //margin-left: 20px;
         width: auto;
         height: 47px;
         @include Desktop{
@@ -36,8 +36,8 @@
         &__nav{
             position: absolute;
             height: 17px;
-            width: 40%;
-            left: 225px;
+            width: 140px;
+            left: 220px;
             top: 18px;
             display: flex;
             align-items: flex-end;

@@ -3,8 +3,6 @@
 .carousel {
   width: 335px;
   height: 255px;
-  left:20px;
-  top: 8px;
   position: relative;
   border-radius: 10px;
   display: flex;
@@ -59,7 +57,7 @@
       width: 12px;
       left: 17.5px;
       top: 22px;
-      color: #FFFFFF;
+      color: #ffffff;
     }
     @include Desktop {
       font-size: 20px;

@@ -15,7 +15,7 @@ export default function Carousel({pictures}){
   
  
   return(
-        <div className="carousel">
+        <div  className='carousel'>
 
              <button  className="carousel__button carousel__button__Left" 
                       onClick={()=>{

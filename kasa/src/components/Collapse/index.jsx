@@ -39,9 +39,9 @@ export default function Dropdowns({title, description}){
 			</button>
 
             <ul  className='dropdown__open dropdown__open__description'>
-                <p  className='dropdown__open__text'>
+                <li  className='dropdown__open__text'>
                     {description}
-                </p>
+                </li>
            </ul>
 		</section>
 	)
