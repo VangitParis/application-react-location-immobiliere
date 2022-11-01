@@ -36,15 +36,15 @@ export default function SingleLocationDescription() {
         </div>
       </article>
 
-      <section>
-        <h2>
+      <section  className='singleLocation-section'>
+        <h2  className='singleLocation-dropdowns'>
         
-          <Dropdowns
+          <Dropdowns  
             title="Descritpion"
             description={locationById.description}
           />
         </h2>
-        <h2>
+        <h2  className='singleLocation-dropdowns'>
           <Equipments/>
         </h2>
       </section>

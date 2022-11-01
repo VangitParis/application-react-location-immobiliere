@@ -1,80 +1,104 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 
-.singleLocation{
+.singleLocation {
+    @include Desktop{
+    margin-top: 30px;
+    }
+  &__title {
+    height: 18px;
+    width: 335px;
+    left: 20px;
+    top: 364px;
+    font-size: 18px;
+    @include Desktop{
+        font-size: 36px;
+        height: 77px;
+        width: 635px;
+        left: 100px;
+        top: 573px;
+        margin-bottom: -30px;
 
-   
-    &__title{
-        height: 18px;
-        width: 335px;
-        left: 20px;
-        top: 364px;
+    }
+  }
+  &__location {
+    height: 22px;
+    width: 323px;
+    left: 20px;
+    top: 415px;
+    font-size: 14px;
+    margin-top: 5px;
+    @include Desktop{
         font-size: 18px;
-        
     }
-    &__location{
-        height: 22px;
-        width: 323px;
-        left: 20px;
-        top: 415px;
-        font-size: 14px;
-        
-    }
-    &__tags{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 84px;
-        height: 18px;
-        left: 20px;
-        top: 447px;
-    }
-    &__rating{
-        height: 18px;
-        width: 98px;
-        left: 20px;
-        top: 489px;
-        border-radius: 0px;
-        >svg{
-            height: 15px;
-            width: 15px;
-            left: 1.5px;
-            top: 1.5px;
-            border-radius: 0px;
-
-        }
-    }
-    
-}
-.host{
+  }
+  &__tags {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
+    width: 84px;
+    height: 18px;
+    left: 20px;
+    top: 447px;
+    @include Desktop{
+        width: 115px;
+    }
+  }
+  &__rating {
+    height: 18px;
+    width: 98px;
+    left: 20px;
+    top: 489px;
+    border-radius: 0px;
+    > svg {
+      height: 15px;
+      width: 15px;
+      left: 1.5px;
+      top: 1.5px;
+      border-radius: 0px;
+    }
+  }
+}
+.host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 33px;
+  width: 135.5px;
+  left: 219px;
+  top: 481px;
+  &__name {
+    text-align: right;
     height: 33px;
-    width: 135.5px;
-    left: 219px;
-    top: 481px;
-    &__name{
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: 11px;
-        text-align: right;
-        height: 33px;
-        width: 40px;
-        left: 0px;
-        top: 0px;
-       
-        
-    }
-    >img{
-        height: 32px;
-        width: 32px;
-        left: 103.5px;
-        top: 0.5px;
-        margin-left: 11px;
-        border-radius: 50%;
-       
-        background: #C4C4C4;
+    width: 78px;
+    left: 0px;
+    top: 0px;
+  }
+  > img {
+    height: 32px;
+    width: 32px;
+    left: 103.5px;
+    top: 0.5px;
+    margin-left: 11px;
+    border-radius: 50%;
 
-    }
+    background: #c4c4c4;
+  }
+}
+.singleLocation-section{
+   display: flex;
+   height: 101px;
+width: 1240px;
+left: 100px;
+top: 670px;
+border-radius: 0px;
+
+}
+.singleLocation-dropdowns{
+    height: 52px;
+width: 582px;
+left: 0px;
+top: 0px;
+border-radius: 10px;
+
 }

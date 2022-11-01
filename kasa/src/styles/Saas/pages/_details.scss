@@ -3,11 +3,18 @@
 
 .details{
   &__main{
-    height: 516px;
+    height: auto;
     width: 335px;
     left: 20px;
     margin-top: 27px;
-    
+    margin-bottom: 100px;
+    @include Desktop{
+      margin-left: 100px;
+      height: 415px;
+width: 1240px;
 
+
+    }
   }
+  
 }

@@ -7,6 +7,15 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
+  @include Desktop{
+   height: 415px;
+   width: 1240px;
+   left: 11px;
+   top: 145px;
+   margin-top: 350px;
+      
+    }
+  
   &__img {
     position: relative;
     height: 255px;
@@ -21,8 +30,15 @@
       transition: 0.3s;
     }
     @include Desktop {
-      width: 340px;
+      width: 1240px;
+      height: 415px;
     }
+  }
+  &__bulletpoint{
+    position: relative;
+    top: 185px;
+    font-size: 18px;
+    text-shadow: 1px 2px 5px #000000;
   }
   &__button {
     display: flex;
@@ -41,6 +57,7 @@
       margin-right: -24px;
       @include Desktop {
         top: 200px;
+        margin-right: -39px;
       }
     }
     &__Right {
@@ -50,6 +67,7 @@
       @include Desktop {
         top: 200px;
         left: 305px;
+        margin-left: -39px;
       }
     }
     > svg {
@@ -58,6 +76,10 @@
       left: 17.5px;
       top: 22px;
       color: #ffffff;
+      @include Desktop{
+        height: 79px;
+        width: 47px;
+      }
     }
     @include Desktop {
       font-size: 20px;

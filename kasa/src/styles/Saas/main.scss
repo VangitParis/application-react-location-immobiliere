@@ -42,4 +42,12 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    @include Desktop{
+        flex-direction: column-reverse; 
+        text-align: right;
+        align-items: flex-end;
+        margin-top: -115px;
+        margin-bottom: 100px;
+    }
 }

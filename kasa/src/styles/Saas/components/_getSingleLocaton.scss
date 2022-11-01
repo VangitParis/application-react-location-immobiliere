@@ -1,10 +1,16 @@
 @import '../utils/mixins';
 
-.carousel{
-    width: 335px;
-    height: 255px;
-    position: relative;
-    border-radius: 10px;
+.text{
+    height: 33px;
+    width: 24px;
+    left: 607px;
+    top: 357px;
+    font-size: 18px;
+    line-height: 142.6%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    text-align: center;
+    z-index: 2;
+    color: #ffffff;
+    margin-top: 100px;
 }
