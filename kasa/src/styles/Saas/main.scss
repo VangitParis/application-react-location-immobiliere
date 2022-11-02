@@ -2,6 +2,7 @@
 @import './utils/variables';
 *{
     box-sizing: border-box;
+    width: 100%;
 }
 
 body{
@@ -11,6 +12,7 @@ body{
     font-size: 12px;
     background: #FFFFFF;
     margin: 4%;
+
     @include Desktop{
        font-size: 18px;
        margin: 0;
