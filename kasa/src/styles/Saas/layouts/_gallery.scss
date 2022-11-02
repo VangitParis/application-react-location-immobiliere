@@ -1,30 +1,28 @@
 @import '../utils/mixins';
 
-.gallery{
-    height: 805px;
-    width: auto;
-    left: 21px;
-    top: 216px;
-    border-radius: 0px;
-    
+.gallery {
+  height: 805px;
+  width: 335px;
+  left: 21px;
+  top: 216px;
+  border-radius: 0px;
 
-    @include Desktop{
-        background: $color-secondary;
-        height: 829px;
-        width: auto;
-        left: 0px;
-        top: 0px;
-        border-radius: 25px;
-        &__background{
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            grid-template-columns: repeat(3,1fr);
-            padding: 25px 0px 25px 0px;
-            width: 1240px;
+  @include Desktop {
+    height: 829px;
+    width: 1240px;
 
-        }
+    &__background {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+     
+      padding: 10px 50px 10px 50px;
+      width: 1240px;
+      background: $color-secondary;
+      border-radius: 25px;
+      top: 283px;
     }
-    
-    
+  }
 }

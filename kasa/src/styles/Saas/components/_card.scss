@@ -2,15 +2,14 @@
 
 /* .Thumb */
 .Thumb {
-    width: 100%;
-    padding: 0;
+   
     @include Desktop {
         height: 100%;
+        width: 33%;
         }
     &__Rectangle2 {
         position: relative;
         height: 255px;
-        
         overflow: hidden;
         width: 335px;
         border-radius: 10px;
@@ -44,10 +43,13 @@
         z-index: 2;
         bottom: -3%;
         left: 5%;
-        width: 100%;
+        width:295px;
         font-size: 18px;
         font-weight: 500;
-    }
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        }
     
  }
 

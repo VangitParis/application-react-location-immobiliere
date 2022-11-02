@@ -4,8 +4,6 @@ import { useParams } from 'react-router-dom'
 import Dropdowns from '../Collapse'
 import Rating from '../Utils/Rating'
 import Tags from '../Utils/Tags'
-
-//import Equipments from '../Equipments'
 import '../../styles/Saas/components/_singleLocationDescription.scss'
 import '../../styles/Saas/main.scss'
 import Equipments from '../Equipments'
@@ -13,7 +11,7 @@ import Equipments from '../Equipments'
 export default function SingleLocationDescription() {
   const { id } = useParams()
   const locationById = accomodations.find((location) => location.id === id)
-  console.log(!locationById)
+  //console.log(!locationById)
 
   return (
    <section className="singleLocation">

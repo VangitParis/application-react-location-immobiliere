@@ -2,129 +2,109 @@
 
 /* _Body */
 
-._body{
-position: absolute;
-width: 335
-px;
-height: 938px;
-left: 0px;
-top: 83px;
-    @include Desktop{
-        position: absolute;
-        width: 86%;
-        height: 1095px;
-        left: 100px;
-        top: 171px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+._body {
+  height: 938px;
+  width: 336px;
+  left: 20px;
+  top: 83px;
+  @include Desktop {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1095px;
+    width: 1240px;
+    left: 100px;
+    top: 171px;
+  }
 }
 
 /*
 /* _Section 1 */
-._Section1{
-    position: absolute;
-    width: 335px;
-    height: 111px;
-    left: 20px;
-    top: 83px;
-    height: 805px;
-    width: 335px;
-    left: 21px;
-    top: 216px;
-    border-radius: 0px;
-
+._Section1 {
+  position: absolute;
+  width: 335px;
+  height: 111px;
+  left: 20px;
+  top: 83px;
+  height: 805px;
+  width: 335px;
+  left: 21px;
+  top: 216px;
+  border-radius: 0px;
 }
 
 /* Mask Group */
-.MaskGroup{
-    position: absolute;
-    width: 335px;
-    height: 111px;
-    left: 20px;
-    top: 83px;
+.MaskGroup {
+  position: absolute;
+  width: 335px;
+  height: 111px;
+  left: 20px;
+  top: 83px;
 }
-
-
-
 
 /* Background */
-.TitleBackground{
-    position: absolute;
-    width: 335px;
-    height: 111px;
-    left: 20px;
-    top: 83px;
-    background: #F7F7F7;
-    border-radius: 10px;
+.TitleBackground {
+  position: absolute;
+  width: 335px;
+  height: 111px;
+  left: 20px;
+  top: 83px;
+  background: #f7f7f7;
+  border-radius: 10px;
 }
-
-
 
 /* IMG */
-.Img{
-    position: absolute;
-    width: 345.27px;
-    height: 962.17px;
-    left: 20px;
-    top: -331px;
-    object-fit: cover;
-    //background: url(eric-muhr-P_XxsdVgtpQ-unsplash.jpg);
+.Img {
+  position: absolute;
+  width: 345.27px;
+  height: 962.17px;
+  left: 20px;
+  top: -331px;
+  object-fit: cover;
+  //background: url(eric-muhr-P_XxsdVgtpQ-unsplash.jpg);
 }
-
-
 
 /* Background */
-.ImgBackground{
-    position: absolute;
-    width: 335px;
-    height: 111px;
-    left: 20px;
-    top: 83px;
-    background: #000000;
-    mix-blend-mode: darken;
-    opacity: 0.3;
-    border-radius: 10px;
+.ImgBackground {
+  position: absolute;
+  width: 335px;
+  height: 111px;
+  left: 20px;
+  top: 83px;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 10px;
 }
-
-
 
 /* Chez vous, partout et ailleurs */
-.TitleHome{
-    position: absolute;
-    left: 9.6%;
-    right: 32.53%;
-    top: 14.04%;
-    bottom: 80.05%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 100%;
-    /* or 24px */
+.TitleHome {
+  position: absolute;
+  left: 9.6%;
+  right: 32.53%;
+  top: 14.04%;
+  bottom: 80.05%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  /* or 24px */
 
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 
-    color:#FFFFFF;
+  color: #ffffff;
 }
-
-
-
 
 /* _Section 2 */
-._Section2{
-    position: absolute;
-    width: 335px;
-    height: 805px;
-    left: 21px;
-    top: 216px;
-    
+._Section2 {
+  position: absolute;
+  width: 335px;
+  height: 805px;
+  left: 21px;
+  top: 216px;
 }
-
-
-
 
 /* .Thumb */
 /*
@@ -425,7 +405,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 142.6%;
-/* or 17px *//*
+/* or 17px */ /*
 display: flex;
 align-items: flex-end;
 text-align: right;

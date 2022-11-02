@@ -8,7 +8,7 @@ import '../../../styles/Saas/components/_stars.scss'
 export default function Rating() {
   const { id } = useParams()
   const locationById = accomodations.find((location) => location.id === id)
-  console.log(locationById)
+  //console.log(locationById.rating)
 
   return (
     <div  className="star">

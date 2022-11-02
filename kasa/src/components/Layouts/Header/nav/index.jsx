@@ -8,6 +8,7 @@ export default function Header() {
     const logo = <img src={logoHeader} alt='logo kasa'/>
     return (
         <header className='header'>
+         
             <Link to='/'  className='header__logo'>
                 {logo}
             </Link>
@@ -15,6 +16,7 @@ export default function Header() {
             <Link  to="/"  className='header__link'>Accueil</Link>
             <Link  to="/apropos"  className='header__link'>A Propos</Link>
             </nav>
+         
         </header>
     )
 }

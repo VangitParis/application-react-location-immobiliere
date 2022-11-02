@@ -6,7 +6,7 @@ import Dropdowns from '../Collapse'
 export default function Equipments() {
   const { id } = useParams()
   const locationById = accomodations.find((location) => location.id === id)
-  console.log(locationById)
+  //console.log(locationById)
 
   return (
     <Dropdowns

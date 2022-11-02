@@ -6,8 +6,7 @@ import '../../styles/Saas/components/_getSingleLocaton.scss'
 export default function SingleLocation() {
   const { id } = useParams()
   const locationById = accomodations.find((location) => location.id === id)
-
-  console.log(locationById.pictures)
+  //console.log(locationById.pictures)
   return (
     <>
     <Carousel key={locationById.id} pictures={locationById.pictures} />

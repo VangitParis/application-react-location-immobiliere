@@ -1,55 +1,60 @@
 @import './utils/mixins';
 @import './utils/variables';
-*{
-    box-sizing: border-box;
-    width: 100%;
+* {
+  box-sizing: border-box;
+  width: 100%;
 }
 
-body{
-    font-family: $main-font;
-    height: 100vh;
-    width: auto;
-    font-size: 12px;
-    background: #FFFFFF;
-    margin: 4%;
+body {
+  font-family: $main-font;
+  width: 375px;
+  height: 812px;
+  font-size: 12px;
+  background: #ffffff;
+  margin: 4%;
+  height: 938px;
+width: 336px;
+left: 20px;
+top: 83px;
 
-    @include Desktop{
-       font-size: 18px;
-       margin: 0;
-    }
-    
- }
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+  @include Desktop {
+    width: 1440px;
+    height: auto;
+    font-size: 18px;
+    margin: auto;
+  }
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 h3,
 a,
 p,
 div {
-   color: $color-primary;
-   }
-
-a{
-    cursor: pointer;
+  color: $color-primary;
 }
 
+a {
+  cursor: pointer;
+}
 
-.flex-between{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    @include Desktop{
-        flex-direction: column-reverse; 
-        text-align: right;
-        align-items: flex-end;
-        margin-top: -115px;
-        margin-bottom: 100px;
-    }
+.flex-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  @include Desktop {
+    flex-direction: column-reverse;
+    text-align: right;
+    align-items: flex-end;
+    margin-top: -115px;
+    margin-bottom: 100px;
+  }
 }
