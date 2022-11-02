@@ -13,7 +13,7 @@ export default function Card({ title, cover, id}) {
        
         <article  className="Thumb">  
          
-            <Link to={`/details/${id}?id=${id}`}>
+            <Link to={`/details/${id}`}>
                
                 <figure  className='Thumb__Rectangle2'>
                

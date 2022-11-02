@@ -8,11 +8,11 @@
   display: flex;
   align-items: center;
   @include Desktop{
-   height: 415px;
-   width: 1240px;
-   left: 11px;
-   top: 145px;
-   margin-top: 350px;
+    height: 415px;
+    width: 1240px;
+    left: 14px;
+    top: 98%;
+  
       
     }
   
@@ -35,10 +35,15 @@
     }
   }
   &__bulletpoint{
-    position: relative;
-    top: 185px;
+    position: absolute;
+    top: 365PX;
     font-size: 18px;
     text-shadow: 1px 2px 5px #000000;
+    text-align: bottom;
+
+    z-index: 2;
+    text-align: center;
+    color: white;
   }
   &__button {
     display: flex;

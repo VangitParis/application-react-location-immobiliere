@@ -3,9 +3,9 @@ import {createRoot} from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from './components/Router/App'
 import { createGlobalStyle } from 'styled-components'
-import Header from '../src/components/Header/nav'
+import Header from '../src/components/Layouts/Header/nav'
 import './styles/Saas/utils/_mixins.scss'
-import Footer from '../src/components/Footer'
+import Footer from '../src/components/Layouts/Footer'
 
 const GlobalStyle = createGlobalStyle`
 *{

@@ -4,7 +4,7 @@ import {Routes, Route} from 'react-router-dom'
 import Home from '../../Pages/Home'
 import About from '../../Pages/About'
 import Details from '../../Pages/Details'
-import Error from '../Error'
+import Error from '../../Pages/Error'
 
 function App() {
     return (

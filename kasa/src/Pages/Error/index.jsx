@@ -1,12 +1,12 @@
 import React from "react";
 import '../../styles/Saas/pages/_error.scss'
 import { Link } from 'react-router-dom'
-//import errorImg from '../../assets/404.png'
+
 
 
 
 export default function Error(){
-    //const img404 = <img src={errorImg} alt='error 404'/>
+   
     return(
     
             <main  className="error">

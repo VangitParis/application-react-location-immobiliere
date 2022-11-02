@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../styles/Saas/layouts/_footer.scss'
-import logos from '../../../src/assets/LOGO.svg'
+import '../../../styles/Saas/layouts/_footer.scss'
+import logos from '../../../assets/LOGO.svg'
 
 export default function Footer() {
   const logo = <img src={logos} alt="Kasa Logo" />

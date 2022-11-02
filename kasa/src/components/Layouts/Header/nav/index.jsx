@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../../styles/Saas/layouts/_header.scss'
+import '../../../../styles/Saas/layouts/_header.scss'
 import { Link } from 'react-router-dom'
-import logoHeader from '../../../assets/logoHeader.png'
+import logoHeader from '../../../../assets/logoHeader.png'
 
 
 export default function Header() {

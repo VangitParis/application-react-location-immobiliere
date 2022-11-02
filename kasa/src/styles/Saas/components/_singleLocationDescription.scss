@@ -3,7 +3,7 @@
 
 .singleLocation {
     @include Desktop{
-    margin-top: 30px;
+    width: auto;
     }
   &__title {
     height: 18px;
@@ -16,8 +16,7 @@
         height: 77px;
         width: 635px;
         left: 100px;
-        top: 573px;
-        margin-bottom: -30px;
+        margin-bottom: 1%;
 
     }
   }
