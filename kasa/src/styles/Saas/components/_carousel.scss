@@ -35,15 +35,20 @@
     }
   }
   &__bulletpoint{
-    position: absolute;
-    top: 365PX;
-    font-size: 18px;
-    text-shadow: 1px 2px 5px #000000;
-    text-align: bottom;
-
-    z-index: 2;
-    text-align: center;
-    color: white;
+    display: none;
+    @include Desktop{
+      display: flex;
+      position: absolute;
+      top: 365PX;
+      font-size: 18px;
+      text-shadow: 1px 2px 5px #000000;
+      text-align: bottom;
+      z-index: 2;
+      text-align: center;
+      color: white;
+      left: 607px;
+    }
+  
   }
   &__button {
     display: flex;

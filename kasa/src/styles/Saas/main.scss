@@ -2,31 +2,28 @@
 @import './utils/variables';
 * {
   box-sizing: border-box;
-  width: 100%;
 }
 
 body {
   font-family: $main-font;
-  width: 375px;
-  height: 812px;
+  justify-content: center;
+  display: flex;
   font-size: 12px;
   background: #ffffff;
-  margin: 4%;
-  height: 938px;
-width: 336px;
-left: 20px;
-top: 83px;
-
-
-
   @include Desktop {
     width: 1440px;
     height: auto;
     font-size: 18px;
     margin: auto;
+    display: inline;
+  }
+  @include DesktopXL{
+    width: 2560px;
   }
 }
 main {
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

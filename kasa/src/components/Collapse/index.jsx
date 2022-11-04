@@ -17,10 +17,10 @@ export default function Dropdowns({title, description}){
 
         <section  className='dropdown'>{/*Dropdowns */}
 
-            <button  className='dropdown__closed dropdown__title' 
+            <button  className='dropdown__closed dropdown__flexB' 
                      onClick={()=> setIsOpen(false)}
             >
-                {title} 
+                <h2  className='dropdown__title' >{title} </h2>
                 <FontAwesomeIcon icon={faChevronDown} />
             </button>
 
@@ -28,13 +28,13 @@ export default function Dropdowns({title, description}){
 
         </section>
     ) : (
-		<section className='dropdown dropdown__open' >
+		<section className='dropdown dropdown__open ' >
 
 			<button
-				className='dropdown__open dropdown__title '
+				className='dropdown__open dropdown__flexB '
 				onClick={() => setIsOpen(true)}
 			>
-				 {title}  
+				 <h2  className='dropdown__title'>{title} </h2> 
                 <FontAwesomeIcon icon={faChevronUp}/>
 			</button>
 

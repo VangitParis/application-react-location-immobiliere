@@ -7,6 +7,9 @@
   width: 336px;
   left: 20px;
   top: 83px;
+  @include MobileL{
+    width: 375px;
+  }
   @include Desktop {
     position: absolute;
     display: flex;
@@ -15,7 +18,11 @@
     height: 1095px;
     width: 1240px;
     left: 100px;
-    top: 171px;
+    top: 120px;
+  }
+  @include DesktopXL{
+    width: 2360px;
+    top: 190px;
   }
 }
 

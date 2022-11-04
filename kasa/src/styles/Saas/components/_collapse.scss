@@ -20,23 +20,13 @@
         margin-bottom: -30px;
     }
 
-    &__title{
-        font-size: 13px;
-        color: #FFFFFF;
-        text-align: left;
-        line-height: 142.6%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        @include Desktop{
-            font-size: 24px;
-        }
-    }
+    
+    
     &__closed{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 335px;
         height: 30px;
         left: 0px;
         top: 0px;
@@ -50,7 +40,25 @@
         }
         
     }
-    
+    &__flexB{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        font-size: 13px;
+        width: 57px;
+        color: #FFFFFF;
+        text-align: left;
+        line-height: 142.6%;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include Desktop{
+            font-size: 24px;
+        }
+    }
     svg{
         height: 100%;
         width: 13px;
@@ -60,8 +68,9 @@
         color: #FFFFFF;
         transform: rotate(0deg);
     }
+   
     &__open{
-        
+        width: 335px;
         align-items: center;
         height: 30px;
         left: 0px;
@@ -75,7 +84,7 @@
             height: 47px;
         }
         
-        
+   
         &__description{
             top: 30px;
             width: 100%;
@@ -97,6 +106,10 @@
             font-size: 12px;
             line-height: 142.6%;
             list-style: none;
+            bottom: -462.62%;
+            height: 144px;
+            width: 335px;
+            top: 24px;
             @include Desktop{
                 font-size: 24px;
             }

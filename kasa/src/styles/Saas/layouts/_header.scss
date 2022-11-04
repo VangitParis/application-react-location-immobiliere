@@ -1,200 +1,109 @@
 @import '../utils/mixins';
 
-
 /* _Header-m */
-    .header{
-        display: flex;
-        justify-content: space-between;
-        //margin-left: 20px;
-        width: 335px;
-        height: 47px;
-        @include Desktop{
-            height: 68px;
-            width: 1240px;
-            left: 100px;
-            top: 40px;
-           position: absolute;
-            
-            }
-        
-    
-    /* .LOGO */
-        &__logo{
-           
-                width: 150px;
-                height: 47px;
-                @include Desktop{
-                    width: 210px;
-                    height: 68px;
-                }
-                
-            
-        }
-    /* _NAV */
-        &__nav{
-            position: absolute;
-            height: 17px;
-            width: 140px;
-            left: 220px;
-            top: 18px;
-            display: flex;
-            align-items: flex-end;
-            text-align: right;
-            margin-top: 15px;
-            margin-left: -3%;
-            
-            @include Desktop{
-                height: 34px;
-                width: 309px;
-                left: 931px;
-                top: 17px;
-                margin-left: 0;
-                margin-top: 0;
-            }
-           
-        
-        }
-    /* ACCUEIL * A PROPOS */
-        &__link{
-            font-size: 12px;
-            text-transform: uppercase;
-            color: $color-primary;
-            
-           
-            cursor: pointer;
-            color: $color-primary;
-                @include Desktop{
-                    font-size: 24px;
-                    text-transform: none;
-                
+.header {
+   
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 335px;
+  height: 47px;
+  
+  @include MobileL{
+    width: 375px;
+  }
+  @include Desktop {
+    margin: 0;
+    height: 68px;
+    width: 1240px;
+    left: 125px;
+    top: 40px;
+    position: absolute;
+  }
+  @include DesktopXL {
+    width: 2360px;
+    left: 121px;
+    height: 98px;
+  }
 
-                }
-        
-        }
-}
+  /* .LOGO */
+  &__logo {
+    width: 150px;
+    height: 47px;
+    @include Desktop {
+      width: 210px;
+      height: 68px;
+      >img{
+        width: 210px;
+      }
+    }
+    @include DesktopXL {
+      height: 98px;
+      width: 310px;
+      > img {
+        width: 310px;
+      }
+    }
+  }
+  /* _NAV */
+  &__nav {
+    position: absolute;
+    height: 17px;
+    width: 140px;
+    left: 222px;
+    top: 18px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: -3%;
+    @include MobileL{
+        left: 270px;
+    }
+
+    @include Desktop {
+        height: 34px;
+        width: 244px;
+        left: 978px;
+        top: 17px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    @include DesktopXL {
+      height: 50px;
+      left: 1965px;
+    }
+  }
+  /* ACCUEIL * A PROPOS */
+  &__link {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-primary;
+    width: 59px;
+
+    cursor: pointer;
+    color: $color-primary;
+    @include Desktop {
+      font-size: 24px;
+      text-transform: none;
      
-   
-    
-    /* Vector */
-    .vectorK{
-        position: absolute;
-        left: 0%;
-        right: 88.82%;
-        top: 0%;
-        bottom: 8.45%;
-        height: 43px
     }
-    /* Group */
-    .Group{
-        position: absolute;
-        left: 12.39%;
-        right: 78.13%;
-        top: 21.53%;
-        bottom: 0%;
+    @include DesktopXL {
+      font-size: 34px;
     }
-   
-    
-    
-    /* Vector */
-    .vectorS{
-        position: absolute;
-        left: 24.45%;
-        right: 67.44%;
-        top: 21.53%;
-        bottom: 7.89%;
+    &__accueil {
+    margin-right: 13px;
+      @include Desktop{
+        margin-right: 57px;
+      }  
+      @include DesktopXL{
+        margin-right: 100px;
+      }
     }
-   
-    /* Vector */
-    .vectorA{
-        position: absolute;
-        left: 34.87%;
-        right: 56.72%;
-        top: 21.25%;
-        bottom: 7.9%;
-    
-    
+    &__apropos {
+      text-decoration: none;
+      min-inline-size: fit-content;
     }
-    
-
-    
-    
-    
-    
-    /* Vector */
-    /*
-    position: absolute;
-    left: 18.84%;
-    right: 80.06%;
-    top: 68.66%;
-    bottom: 8.17%;
-    
-    background: #FF6060;
-    
-    
-    /* Vector */
-    /*
-    position: absolute;
-    left: 12.39%;
-    right: 78.13%;
-    top: 21.53%;
-    bottom: 0%;
-    
-    background: #FF6060;
-    
-    
-    /* _NAV */
-    /*
-    position: absolute;
-    left: 58.21%;
-    right: 0%;
-    top: 38.3%;
-    bottom: 25.53%;
-    
-    
-    
-    /* A PROPOS */
-    /*
-    position: absolute;
-    left: 78.81%;
-    right: 0%;
-    top: 38.3%;
-    bottom: 25.53%;
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 142.6%;
-    /* or 17px */
-    /*
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    
-    color: #FF6060;
-    
-    
-    
-    /* ACCUEIL */
-    /*
-    position: absolute;
-    left: 58.21%;
-    right: 24.18%;
-    top: 38.3%;
-    bottom: 25.53%;
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 142.6%;
-    /* or 17px *//*
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    text-decoration-line: underline;
-    color: #FF6060;
-    
-    
-    */
-
+  }
+}

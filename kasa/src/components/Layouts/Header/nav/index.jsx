@@ -13,8 +13,8 @@ export default function Header() {
                 {logo}
             </Link>
             <nav className='header__nav'>
-            <Link  to="/"  className='header__link'>Accueil</Link>
-            <Link  to="/apropos"  className='header__link'>A Propos</Link>
+            <Link  to="/"  className='header__link header__link__accueil'>Accueil</Link>
+            <Link  to="/apropos"  className='header__link header__link__apropos'>A Propos</Link>
             </nav>
          
         </header>

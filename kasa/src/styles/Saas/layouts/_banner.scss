@@ -1,81 +1,82 @@
 @import '../utils/mixins';
 
-
-.banner{
-    background-color: #000000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-       url('../../../assets/homeImg.png');
-    background-position: center;
-    display: table-cell; /* comportement visuel de cellule */
-    vertical-align: middle;
-    width: 335px;
-    height: 111px;
-    text-align: left;
-    border-radius: 10px;
-    background-size: cover;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    
-
-    @include Desktop{
-        justify-content: center;
-        
-        height: 223px;
-width: 1240px;
-left: 100px;
-top: 171px;
-
-
-
-    }
-    
-
-    &__title{
-        margin-left: 20px;
-        line-height: 24px;
-        font-size: 24px;
-        font-weight: 500;
-        height: 48px;
-        width: 213px;
-        left: 36px;
-        top: 114px;
-        @include Desktop{
-            height: auto;
-            width: auto;
-            left: 373px;
-            top: 249px;
-            font-size: 48px;
-            vertical-align: center;
-
-        }
-       
-        
-    }
+.banner {
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../../assets/homeImg.png');
+  background-position: center;
+  display: table-cell; /* comportement visuel de cellule */
+  vertical-align: middle;
+  width: 335px;
+  height: 111px;
+  text-align: left;
+  border-radius: 10px;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  @include MobileL{
+    width: 375px;
+  }
+  @include Desktop {
+    justify-content: center;
+    height: 223px;
+    width: 1240px;
+    left: 100px;
+    top: 171px;
+    border-radius: 25px;
+  }
+  @include DesktopXL{
+    width: 2360px;
+    height: 423px;
 }
 
-.bannerAbout{
-    margin-top: 17px;
-    width: 88%;
-    height: 223px;
-    background: #F7F7F7;
-    border-radius: 25px;
-    >h1{
-        display: none;
+  &__title {
+    margin-left: 20px;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    height: 48px;
+    width: 213px;
+    left: 36px;
+    top: 114px;
+    @include Desktop {
+      height: auto;
+      width: auto;
+      left: 373px;
+      top: 249px;
+      font-size: 48px;
+      vertical-align: center;
     }
-    @include Desktop{
-        width: 86%;
-        margin-top: 44px;
+    @include DesktopXL{
+        font-size: 68px;
     }
-    >img{
-        object-position: 50%;
-        border-radius: 10px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(70%) saturate(140%);
-        @include Desktop{
-            border-radius: 25px;
-        }
+  }
+
+}
+
+.bannerAbout {
+  margin-top: 17px;
+  width: 336px;
+  height: 223px;
+  background: #f7f7f7;
+  border-radius: 25px;
+  > h1 {
+    display: none;
+  }
+  @include Desktop {
+    width: 86%;
+    margin-top: 44px;
+  }
+  > img {
+    object-position: 50%;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%) saturate(140%);
+    @include Desktop {
+      border-radius: 25px;
     }
+  }
 }

@@ -1,4 +1,5 @@
 @import '../utils/mixins';
+@import '../utils/variables';
 
 /* .Thumb */
 .Thumb {
@@ -8,48 +9,80 @@
         width: 33%;
         }
     &__Rectangle2 {
+        background: $background-Gradient;
         position: relative;
         height: 255px;
         overflow: hidden;
         width: 335px;
         border-radius: 10px;
+        margin: 20px 0;
+        z-index: 2;
+        @include MobileL{
+            width: 375px;
+        }
         @include Desktop{
             width: 340px;
-            height: auto;
+            height: 340px;
+        }
+        @include DesktopXL{
+            height: 540px;
+            width: 540px;
         }
         
         }
     &__imgLogement{
+     
         position: relative;
         height: 255px;
         width: 335px;
         z-index: 1;
         object-fit: cover;
         border-radius: 10px;
-        filter: brightness(70%) saturate(140%);
+        filter: bottoms brightness(70%) saturate(140%);
+        background: $background-Gradient;
         transition: 0.3s;
         &:hover {
             filter: brightness(100%) saturate(100%);
             transition: 0.3s;
         }
+        @include MobileL{
+            width: 375px;
+        }
         @include Desktop{
             height: 340px;
             width: 340px;
         }
+        @include DesktopXL{
+            height: 540px;
+            width: 540px;
+        }
     }
     &__titleLocation {
         color: white;
-        position: absolute;
+       
         z-index: 2;
-        bottom: -3%;
-        left: 5%;
-        width:295px;
+        
+        
         font-size: 18px;
         font-weight: 500;
         line-height: 142.6%;
         display: flex;
         align-items: flex-end;
+       
+        border-radius: 10px;
+        position: absolute;
+        left: 5.88%;
+        right: 5.88%;
+        top: 73.73%;
+        bottom: 5.88%;
+        
+
+        @include DesktopXL{
+            width: 390px;
+            font-size: 24px;
         }
+        }
+        
     
  }
 

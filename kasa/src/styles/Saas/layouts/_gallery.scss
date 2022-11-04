@@ -6,7 +6,12 @@
   left: 21px;
   top: 216px;
   border-radius: 0px;
-
+  @include MobileL{
+    width: 375px;
+    &__background{
+        width: 375px;
+    }
+  }
   @include Desktop {
     height: 829px;
     width: 1240px;
@@ -17,12 +22,19 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-     
-      padding: 10px 50px 10px 50px;
+      padding: 40px 0px 40px 50px;
       width: 1240px;
       background: $color-secondary;
       border-radius: 25px;
       top: 283px;
+    }
+  }
+  @include DesktopXL{
+    width: 2360px;
+    &__background{
+        width: 2360px;
+        top :430px;
+        padding: 80px 0px 80px 160px;
     }
   }
 }

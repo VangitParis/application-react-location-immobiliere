@@ -2,22 +2,26 @@
 @import '../utils/variables';
 
 .singleLocation {
-    @include Desktop{
+  height: 516px;
+  width: 335px;
+  left: 20px;
+  top: 94px;
+
+  @include Desktop {
     width: auto;
-    }
+  }
   &__title {
     height: 18px;
     width: 335px;
     left: 20px;
     top: 364px;
     font-size: 18px;
-    @include Desktop{
-        font-size: 36px;
-        height: 77px;
-        width: 635px;
-        left: 100px;
-        margin-bottom: 1%;
-
+    @include Desktop {
+      font-size: 36px;
+      height: 77px;
+      width: 635px;
+      left: 100px;
+      margin-bottom: 1%;
     }
   }
   &__location {
@@ -27,8 +31,8 @@
     top: 415px;
     font-size: 14px;
     margin-top: 5px;
-    @include Desktop{
-        font-size: 18px;
+    @include Desktop {
+      font-size: 18px;
     }
   }
   &__tags {
@@ -39,8 +43,8 @@
     height: 18px;
     left: 20px;
     top: 447px;
-    @include Desktop{
-        width: 115px;
+    @include Desktop {
+      width: 115px;
     }
   }
   &__rating {
@@ -84,20 +88,26 @@
     background: #c4c4c4;
   }
 }
-.singleLocation-section{
-   display: flex;
-   height: 101px;
-width: 1240px;
-left: 100px;
-top: 670px;
-border-radius: 0px;
-
+.singleLocation-section {
+  @include Desktop {
+    display: flex;
+    height: 101px;
+    width: 1240px;
+    left: 100px;
+    top: 670px;
+    border-radius: 0px;
+  }
 }
-.singleLocation-dropdowns{
-    height: 52px;
-width: 582px;
-left: 0px;
-top: 0px;
-border-radius: 10px;
-
+.singleLocation-dropdowns {
+    width: 335px;
+    border-radius: 10px;
+    margin-top: 30px;
+    @include Desktop{
+        height: 52px;
+        width: 582px;
+        left: 0px;
+        top: 0px;
+      
+    }
+  
 }

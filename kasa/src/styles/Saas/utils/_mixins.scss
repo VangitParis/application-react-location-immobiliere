@@ -1,9 +1,14 @@
 @import './variables';
 
 
-
-@mixin Desktop{
-    @media screen and (min-width:map-get($breakpoints, Desktop)){
+@mixin MobileS{
+    @media screen and (min-width:map-get($breakpoints, MobileS)){
+        @content;
+    }
+        
+}
+@mixin MobileL{
+    @media screen and (min-width:map-get($breakpoints, MobileL)){
         @content;
     }
         
@@ -14,5 +19,15 @@
     }
         
 }
-
-
+@mixin Desktop{
+    @media screen and (min-width:map-get($breakpoints, Desktop)){
+        @content;
+    }
+        
+}
+@mixin DesktopXL{
+    @media screen and (min-width:map-get($breakpoints, DesktopXL)){
+        @content;
+    }
+        
+}
