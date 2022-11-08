@@ -2,27 +2,39 @@
 
 /* _Header-m */
 .header {
-   
   display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  width: 335px;
+  align-items: center;
   height: 47px;
-  
-  @include MobileL{
-    width: 375px;
+  width: 335px;
+  //margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 0px;
+  @include MobileS {
+    //margin-left: 15px;
+    width: 290px;
+  }
+  @include MobileL {
+    width: 385px;
+  }
+  @include Tab{
+    width: 90%;
+  }
+  @include DesktopS {
+
+    width: 905px;
+    height: 100%;
+   // left: 40px;
   }
   @include Desktop {
-    margin: 0;
-    height: 68px;
     width: 1240px;
-    left: 125px;
-    top: 40px;
-    position: absolute;
+    //left: 80px;
+
+    margin-top: 40px;
+    height: 68px;
   }
   @include DesktopXL {
-    width: 2360px;
-    left: 121px;
+    width: 2305px;
+    //left: 121px;
     height: 98px;
   }
 
@@ -30,10 +42,16 @@
   &__logo {
     width: 150px;
     height: 47px;
+    @include DesktopS {
+        height: 0;
+        > img {
+            width: 210px;
+          }
+    }
     @include Desktop {
       width: 210px;
       height: 68px;
-      >img{
+      > img {
         width: 210px;
       }
     }
@@ -49,61 +67,65 @@
   &__nav {
     position: absolute;
     height: 17px;
-    width: 140px;
-    left: 222px;
-    top: 18px;
+    width: 167px;
+    left: 200px;
     display: flex;
-    align-items: flex-end;
     text-align: right;
-    justify-content: space-between;
-    margin-top: 15px;
-    margin-left: -3%;
-    @include MobileL{
-        left: 270px;
+    //margin-top: 15px;
+    @include MobileS {
+      left: 170px;
+    }
+    @include MobileL {
+      left: 255px;
+    }
+    @include Tab{
+        left: 75%;
     }
 
-    @include Desktop {
+    @include DesktopS {
         height: 34px;
-        width: 244px;
-        left: 978px;
-        top: 17px;
+        width: 224px;
+        left: 745px;
+        top: 40px;
         margin-left: 0;
         margin-top: 0;
+
+    }
+    @include Desktop {
+        height: 34px;
+        width: 295px;
+        //left: 1040px;
+        left: 72.5%;
+        top: 60px;
     }
     @include DesktopXL {
-      height: 50px;
-      left: 1965px;
+        height: 50px;
+        left: 75%;
+        width: 487px;
     }
   }
   /* ACCUEIL * A PROPOS */
-  &__link {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $color-primary;
-    width: 59px;
+}
 
-    cursor: pointer;
-    color: $color-primary;
-    @include Desktop {
-      font-size: 24px;
-      text-transform: none;
-     
-    }
-    @include DesktopXL {
-      font-size: 34px;
-    }
-    &__accueil {
-    margin-right: 13px;
-      @include Desktop{
-        margin-right: 57px;
-      }  
-      @include DesktopXL{
-        margin-right: 100px;
-      }
-    }
-    &__apropos {
-      text-decoration: none;
-      min-inline-size: fit-content;
-    }
+ul {
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $color-primary;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-inline-size: fit-content;
+  
+  @include DesktopS {
+    font-size: 20px;
+    text-transform: none;
+  }
+  @include Desktop {
+    font-size: 24px;
+  }
+  @include DesktopXL {
+    font-size: 40px;
   }
 }

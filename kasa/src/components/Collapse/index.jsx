@@ -13,9 +13,11 @@ export default function Dropdowns({title, description}){
     const [isOpen, setIsOpen] = useState(true)
     description = Array.isArray(description) ? description : [description]
 
+   
+
     return isOpen ? (
 
-        <section  className='dropdown'>{/*Dropdowns */}
+        <div  className='dropdown '>{/*Dropdowns */}
 
             <button  className='dropdown__closed dropdown__flexB' 
                      onClick={()=> setIsOpen(false)}
@@ -26,10 +28,10 @@ export default function Dropdowns({title, description}){
 
            
 
-        </section>
+        </div>
     ) : (
-		<section className='dropdown dropdown__open ' >
-
+		<div className='dropdown dropdown__open ' >
+        <nav className='dropdown__large'>
 			<button
 				className='dropdown__open dropdown__flexB '
 				onClick={() => setIsOpen(true)}
@@ -37,13 +39,14 @@ export default function Dropdowns({title, description}){
 				 <h2  className='dropdown__title'>{title} </h2> 
                 <FontAwesomeIcon icon={faChevronUp}/>
 			</button>
-
+            
             <ul  className='dropdown__open dropdown__open__description'>
                 <li  className='dropdown__open__text'>
                     {description}
                 </li>
            </ul>
-		</section>
+           </nav>
+		</div>
 	)
 }
 

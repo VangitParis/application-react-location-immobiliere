@@ -14,36 +14,33 @@ export default function SingleLocationDescription() {
   //console.log(!locationById)
 
   return (
-   <section className="singleLocation">
-     
-     <article>
-       <h1 className="singleLocation__title">{locationById.title}</h1>
-       <p className="singleLocation__location">{locationById.location}</p>
-       <div className="singleLocation__tags">
-         {locationById.tags.map((tag, index) => (
-           <Tags key={index} getTag={tag} />
-         ))}
-       </div>
-       <div className="flex-between">
-         <Rating />
-         <div className="host">
-           <p className="host__name">{locationById.host.name} </p>
-           <img src={locationById.host.picture} alt="Hébergeur" />
-         </div>
-       </div>
-     </article>
+    <>
+      <section className="singleLocation">
+        <div className='singleLocation__title"'>
+          <h1 className="singleLocation__title__text">{locationById.title}</h1>
+          <p className="singleLocation__location">{locationById.location}</p>
+        </div>
 
-     <section className="singleLocation-section">
-       <h2 className="singleLocation-dropdowns">
-         <Dropdowns
-           title="Descritpion"
-           description={locationById.description}
-         />
-       </h2>
-       <h2 className="singleLocation-dropdowns">
-         <Equipments />
-       </h2>
-     </section>
-   </section>
+        <div className="flex-between">
+          <Rating />
+          <div className="host">
+            <p className="host__name">{locationById.host.name} </p>
+            <img src={locationById.host.picture} alt="Hébergeur" />
+          </div>
+        </div>
+      </section>
+
+      <section className="singleLocation-tags-dropdowns">
+        <div className="singleLocation__tags flex">
+          {locationById.tags.map((tag, index) => (
+            <Tags key={index} getTag={tag} />
+          ))}
+        </div>
+        <div className='singleLocation-dropdowns'>
+        <Dropdowns title="Description" description={locationById.description} />
+        <Equipments />
+        </div>
+      </section>
+    </>
   )
 }

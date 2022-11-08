@@ -1,149 +1,254 @@
 @import '../utils//mixins';
 
-
 //Collapse Component
-.dropdown{
-    height: 30px;
+.dropdown {
+  height: 30px;
+  width: 335px;
+  left: 20px;
+  top: 326px;
+  border-radius: 0px;
+  margin-top: 19px;
+
+  @include MobileS {
+    width: 305px;
+  }
+  @include MobileL {
+    width: 380px;
+  }
+  @include Tab{
+    width: 90%;
+  }
+  @include DesktopS {
+    width: 745px;
+    height: 47px;
+
+    margin-top: 31px;
+  }
+  @include Desktop {
+    width: 1023px;
+  }
+  @include DesktopXL {
+    width: 1950px;
+    height: 67px;
+    margin-top: 61px;
+  }
+
+  &__closed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 335px;
-    left: 20px;
-    top: 326px;
-    border-radius: 0px;
-    margin-top: 19px;
-    
-    
-    @include Desktop{
-        width: 70%;
-        height: auto;
-        left: 208px;
-        top: 625px;
-        margin-top: 30px;
-        margin-bottom: -30px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    background-color: $color-primary;
+    border: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+    @include MobileS {
+      width: 305px;
     }
-
-    
-    
-    &__closed{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 335px;
-        height: 30px;
-        left: 0px;
-        top: 0px;
-        border-radius: 5px;
-        background-color: $color-primary;
-        border: hidden;
-        margin-bottom: 20px;
-        cursor: pointer;
-        @include Desktop{
-            height: 47px;
-        }
-        
+    @include MobileL {
+      width: 380px;
     }
-    &__flexB{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    @include Tab{
+        width: 690px;
+      }
+    @include DesktopS {
+      height: 47px;
+      width: 745px;
     }
-    &__title{
-        font-size: 13px;
-        width: 57px;
-        color: #FFFFFF;
-        text-align: left;
-        line-height: 142.6%;
-        height: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        @include Desktop{
-            font-size: 24px;
-        }
+    @include Desktop {
+      height: 47px;
+      width: 1023px;
     }
-    svg{
-        height: 100%;
-        width: 13px;
-        left: 1.6px;
-        top: 14px;
-        border-radius: 0px;
-        color: #FFFFFF;
-        transform: rotate(0deg);
+    @include DesktopXL {
+        width: 1950px;
+        height: 67px;
     }
-   
-    &__open{
-        width: 335px;
-        align-items: center;
-        height: 30px;
-        left: 0px;
-        top: 0px;
-        border-radius: 5px;
-        background-color: $color-primary;
-        border: hidden;
-        margin-bottom: 160px;
-        cursor: pointer;
-        @include Desktop{
-            height: 47px;
-        }
-        
-   
-        &__description{
-            top: 30px;
-            width: 100%;
-            background-color: $color-secondary;
-            margin-top: -160px;
-            padding-left: 20px;
-            padding-right: 20px;
-            z-index: 2;
-            border-radius: 0 0 5px 5px;
-            height: auto;
-            @include Desktop{
-                
-            }
-            }
-        &__text{
-            padding-top: 15px;
-            padding-bottom: 30px;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 142.6%;
-            list-style: none;
-            bottom: -462.62%;
-            height: 144px;
-            width: 335px;
-            top: 24px;
-            @include Desktop{
-                font-size: 24px;
-            }
-        }
-        
-}
-    
-    
-}
-/*
-.dropdown-open{
-        top: 30px;
+  }
+  &__large {
+    display: grid;
+    width: 335px;
+    height: 30px;
+    left: calc(50% - 335px / 2);
+    top: calc(50% - 30px / 2 - 15px);
+    @include Tab{
         width: 100%;
-        background-color: $color-secondary;
-        margin-top: -20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-        z-index: 2;
-        border-radius: 0 0 5px 5px;
-        height: 100%;
+    }
+    @include DesktopS {
+      width: 745px;
+    }
+    @include Desktop {
+      width: 1023px;
+    }
+  }
+  &__flexB {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 13px;
+    width: 57px;
+    color: #ffffff;
+    margin-left: 11px;
+    text-align: left;
+    line-height: 142.6%;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
 
-        &__description{
-            top: 30px;
-            width: 100%;
-            background-color: $color-secondary;
-            margin-top: -20px;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            padding-left: 20px;
-            padding-right: 20px;
-            z-index: 2;
-            border-radius: 0 0 5px 5px;
-            height: 100%;
-            }
-}*/
+    @include DesktopS {
+      font-size: 20px;
+      font-weight: 500;
+      height: 34px;
+      width: 100px;
+      left: 18px;
+      top: 6px;
+      margin-left: 14px;
+      line-height: 142.6%;
+      display: flex;
+      align-items: center;
+    }
+    @include Desktop {
+      font-size: 24px;
+    }
+    @include DesktopXL{
+   font-size: 34px;
+    }
+  }
+
+  svg {
+    height: 100%;
+    width: 13px;
+    margin-right: 15px;
+    color: $color-white;
+    @include DesktopS {
+      margin-right: 30px;
+      width: 20px;
+    }
+    @include DesktopXL{
+        width: 30px;
+    }
+  }
+
+  &__open {
+    border-radius: 5px;
+    background-color: $color-primary;
+    border: hidden;
+    width: 335px;
+    height: 30px;
+    margin-bottom: 120px;
+    cursor: pointer;
+    @include MobileS {
+      width: 305px;
+    }
+    @include MobileL {
+      width: 380px;
+    }
+    @include Tab{
+        width: 690px;
+      }
+    @include DesktopS {
+      width: 745px;
+      height: 47px;
+    }
+    @include Desktop {
+      width: 1023px;
+    }
+
+    @include DesktopXL {
+      width: 1950px;
+      height: 67px;
+    }
+
+    &__description {
+      top: 30px;
+      //height: 223px;
+      width: 335px;
+      background-color: $color-secondary;
+      margin-top: -120px;
+      z-index: 2;
+      border-radius: 0 0 5px 5px;
+      height: auto;
+
+      @include MobileS {
+        width: 305px;
+      }
+      @include MobileL {
+        width: 380px;
+      }
+      @include MobileS{
+        width: 90%;
+      }
+      @include Tab{
+        width: 100%;
+      }
+      @include DesktopS {
+        //height: 223px;
+        width: 745px;
+        left: 0px;
+        top: 38px;
+        border-radius: 5px;
+      }
+      @include Desktop {
+        //height: 147px;
+        width: 1023px;
+        left: 0px;
+        top: 38px;
+        border-radius: 5px;
+      }
+      @include DesktopXL {
+        width: 1950px;
+      }
+    }
+    &__text {
+      text-transform: none;
+      padding-top: 11px;
+      padding-bottom: 30px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 142.6%;
+      list-style: none;
+      bottom: -462.62%;
+      height: 144px;
+      width: 292px;
+      top: 24px;
+      height: fit-content;
+
+      @include DesktopS {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-size: 20px;
+        height: 100%;
+        width: 725px;
+        left: 18px;
+        top: 74px;
+        padding-left: 16px;
+      }
+      @include Desktop {
+        font-size: 24px;
+        //height: 91px;
+        width: 978px;
+        left: 18px;
+        top: 74px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+      @include DesktopXL{
+        width: 1920px;
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+//SPECIFIQUE PAGE LOGEMENT
+.collapse{
+
+}

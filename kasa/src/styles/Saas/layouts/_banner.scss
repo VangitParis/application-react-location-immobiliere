@@ -15,21 +15,33 @@
   color: #ffffff;
   display: flex;
   align-items: center;
-  @include MobileL{
+  margin-top: 20px;
+  @include MobileS{
+    width: 300px;
+  }
+  @include MobileL {
     width: 375px;
   }
-  @include Desktop {
+  @include Tab{
+    width: 690px;
+  }
+  @include DesktopS {
     justify-content: center;
-    height: 223px;
-    width: 1240px;
+    height: 168px;
+    width: 920px;
     left: 100px;
     top: 171px;
     border-radius: 25px;
   }
-  @include DesktopXL{
-    width: 2360px;
-    height: 423px;
-}
+  @include Desktop {
+    height: 223px;
+    width: 1240px;
+    
+  }
+  @include DesktopXL {
+    width: 2305px;
+    height: 462px;
+  }
 
   &__title {
     margin-left: 20px;
@@ -48,11 +60,10 @@
       font-size: 48px;
       vertical-align: center;
     }
-    @include DesktopXL{
-        font-size: 68px;
+    @include DesktopXL {
+      font-size: 68px;
     }
   }
-
 }
 
 .bannerAbout {
@@ -64,9 +75,29 @@
   > h1 {
     display: none;
   }
+  @include MobileS{
+    width: 310px;
+  }
+  @include MobileL{
+    width: 90%;
+  }
+  @include Tab{
+    width: 90%;
+  }
+
+  @include DesktopS {
+    width: 920px;
+    border-radius: 25px;
+    height: 223px;
+  }
   @include Desktop {
-    width: 86%;
-    margin-top: 44px;
+    width: 1240px;
+
+   
+  }
+  @include DesktopXL{
+    width: 2305px;
+    height: 362px;
   }
   > img {
     object-position: 50%;
@@ -75,8 +106,9 @@
     height: 100%;
     object-fit: cover;
     filter: brightness(70%) saturate(140%);
-    @include Desktop {
-      border-radius: 25px;
+    @include DesktopS {
+        border-radius: 25px;
     }
+    
   }
 }

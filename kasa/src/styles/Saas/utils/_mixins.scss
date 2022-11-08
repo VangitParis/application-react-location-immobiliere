@@ -2,7 +2,7 @@
 
 
 @mixin MobileS{
-    @media screen and (min-width:map-get($breakpoints, MobileS)){
+    @media screen and (width:map-get($breakpoints, MobileS)){
         @content;
     }
         
@@ -13,6 +13,13 @@
     }
         
 }
+@mixin Tab{
+    @media screen and (min-width:map-get($breakpoints, Tab)){
+        @content;
+    }
+        
+}
+
 @mixin DesktopS{
     @media screen and (min-width:map-get($breakpoints, DesktopS)){
         @content;

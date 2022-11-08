@@ -1,33 +1,68 @@
 @import './utils/mixins';
 @import './utils/variables';
-* {
-  box-sizing: border-box;
-}
 
-body {
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    
+    padding: 0;
+    margin: 0;
+
+  
+}
+#root {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+body,html {
+  margin: 0 auto;
   font-family: $main-font;
-  justify-content: center;
-  display: flex;
-  font-size: 12px;
-  background: #ffffff;
-  @include Desktop {
-    width: 1440px;
-    height: auto;
-    font-size: 18px;
-    margin: auto;
-    display: inline;
-  }
-  @include DesktopXL{
-    width: 2560px;
-  }
+  position: relative;
+  max-width: 100%;
+  align-content: center;
+//   justify-content: center;
+//   display: flex;
+//   font-size: 12px;
+//   background: #ffffff;
+//   height: 812px;
+//   width: 375px;
+
+//   @include MobileS {
+//     width: 320px;
+//   }
+//   @include MobileL {
+//     width: 425px;
+//   }
+//   @include Desktop {
+//     width: 1440px;
+//   }
+//   @include DesktopXL {
+//     width: 2560px;
+//   }
 }
 main {
-  margin-left: 20px;
-  margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include MobileS {
+    margin-left: 30px;
+  }
+  @include Desktop{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include DesktopXL{
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 h3,
@@ -47,11 +82,59 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  @include Desktop {
+  @include DesktopS{
     flex-direction: column-reverse;
     text-align: right;
     align-items: flex-end;
     margin-top: -115px;
     margin-bottom: 100px;
   }
+  @include Desktop {
+    
+    margin-top: -115px;
+    margin-bottom: 100px;
+  }
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div {
+    margin: 0;
+  }
+
+ul li {
+ 
+ 
+    padding: 0 10px;
+    font-weight: bold;
+    min-inline-size : fit-content ;
+    @include DesktopS{
+        padding: 0 20px;
+    }
+     @include Desktop {
+         padding: 0 30px;
+       }
+       @include DesktopXL{
+         padding: 0 50px;
+       }
+      
+}
+
+ul li a{
+    width: 59px;
+    text-decoration: none;
+    
+}
+
+.active {
+  
+    color: $color-primary;
+}
+.active a{
+    text-decoration: underline ;
+    color: $color-primary;
+}
+
+

@@ -6,12 +6,28 @@
     height: auto;
     width: 335px;
     left: 20px;
-    margin-top: 27px;
+    margin-top: 17px;
     margin-bottom: 100px;
+    @include MobileS{
+      width: 96%;
+    }
+    @include MobileL{
+      width: 90%;
+    }
+    @include Tab{
+      width: 90%;
+    }
+    @include DesktopS{
+      width: 89%;
+      margin-top: 90px;
+    }
     @include Desktop{
-      width: auto;
+      width: 86%;
+      margin-top: 20px;
 
-
+    }
+    @include DesktopXL{
+      width: 90%;
     }
   }
   

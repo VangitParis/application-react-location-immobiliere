@@ -3,29 +3,55 @@
 /* _Body */
 
 ._body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   height: 938px;
   width: 336px;
-  left: 20px;
-  top: 83px;
+  position: absolute;
+  top: 90px;
+  height: 938px;
+    width: 336px;
+    margin-left: 20px;
+ 
+  @include MobileS{
+    width: 300px;
+    margin-left: 15px;
+  }
   @include MobileL{
     width: 375px;
   }
-  @include Desktop {
-    position: absolute;
+  @include Tab{
+    width: 690px;
+  }
+  @include DesktopS{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1095px;
+    width: 994px;
+    
+   }
+  @include Desktop {
+    margin-left: 180px;
+    margin-right: 180px;
     width: 1240px;
-    left: 100px;
-    top: 120px;
+    //left: 100px;
+    top: 152px;
+    // margin-left: 100px;
+    // margin-right: 100px;
   }
+
   @include DesktopXL{
-    width: 2360px;
+    width: 2280px;
     top: 190px;
+    margin-left: 145px;
   }
 }
-
+.footer-home{
+    top: 5800px;
+}
 /*
 /* _Section 1 */
 ._Section1 {

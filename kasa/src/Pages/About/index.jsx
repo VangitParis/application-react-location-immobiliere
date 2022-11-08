@@ -9,12 +9,12 @@ function About() {
    
 return(
    
-    <main>
+    <main className='main-about'>
         <section  className='bannerAbout'>{/*Section2*/}
             <h1>A propos de nos services</h1>
             <img src= {aproposImg} alt ='paysages alpins'/>
         </section>
-
+        <section>
         {aproposTextes.map((datas, index)=>(
         <Dropdowns 
             key={`${datas.title}-${index}`}
@@ -23,9 +23,7 @@ return(
         />
 
         ))}
-    
-       
-
+        </section>
     </main>
     
 )

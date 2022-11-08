@@ -3,8 +3,13 @@
 
 
 .error {
+    width: 90%;
     height: 100%;
     text-align: center;
+    @include DesktopS{
+        width: 89%;
+       margin-top: 80px;
+   }
     &__404 {
         left: 88px;
         top: 262px;
@@ -16,6 +21,10 @@
         color: $color-primary;
         margin-top: 80px;
         margin-bottom: 11px;
+        @include DesktopS{
+            width: 100%;
+            font-size: 148px;
+        }
        @include Desktop {
           font-size: 288px;
           margin-bottom: 66px;
@@ -34,6 +43,14 @@
         line-height: 26px;
         letter-spacing: 0em;
         margin-bottom: 133px;
+        @include Tab{
+            width: 100%;
+
+        }
+        @include DesktopS{
+            width: 100%;
+
+        }
         @include Desktop {
             font-size: 36px;
             width: 872px;

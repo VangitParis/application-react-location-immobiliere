@@ -12,15 +12,18 @@
     align-items: center;
     left: 0;
     
-    @include Desktop{
+    
+    @include DesktopS{
         height: 209px;
-        width: 1440px;
-        top: 3213px;
+        width: 100%;
+        top: 2400px;
         
+    }
+    @include Desktop{
+        top: 3400px;
     }
     @include DesktopXL{
         width: 2560px;
-        top :4950px;
         height: 400px;
         
     }
@@ -42,3 +45,8 @@
        }
     }
  }
+
+.footerFlex{
+    display: flex;
+    
+}

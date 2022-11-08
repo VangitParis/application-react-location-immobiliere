@@ -1,15 +1,18 @@
 @import '../utils/mixins';
 
 .carousel {
-  width: 335px;
+  width: 100%;
   height: 255px;
   position: relative;
   border-radius: 10px;
   display: flex;
   align-items: center;
+  @include MobileS{
+    width: 100%;
+  }
   @include Desktop{
     height: 415px;
-    width: 1240px;
+   
     left: 14px;
     top: 98%;
   
@@ -30,7 +33,7 @@
       transition: 0.3s;
     }
     @include Desktop {
-      width: 1240px;
+      width: 100%;
       height: 415px;
     }
   }
