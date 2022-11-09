@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import '../../styles/sass/components/_card.scss'
 import { Link } from 'react-router-dom'
 
-export default function Card({ title, cover, id }) {
+
+export default function Card({ title, cover, id}) {
+  
   return (
     //article : figure = img + figcaption
 
@@ -11,7 +13,6 @@ export default function Card({ title, cover, id }) {
       <Link to={`/details/${id}`}>
         <figure className="Thumb__Rectangle2">
           <img src={cover} alt="logements" className="Thumb__imgLogement" />
-
           <figcaption className="Thumb__titleLocation">
             <h2>{title}</h2>
           </figcaption>
