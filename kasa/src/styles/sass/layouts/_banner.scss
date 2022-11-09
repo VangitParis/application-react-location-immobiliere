@@ -1,7 +1,9 @@
 @import '../utils/mixins';
 
+/* BANNER HOME PAGE */
 .banner {
   background-color: #000000;
+  /*IMAGE URL BACKGROUND BANNER HOME PAGE*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../../../assets/homeImg.png');
   background-position: center;
@@ -42,7 +44,7 @@
     width: 2305px;
     height: 462px;
   }
-
+  /*TITLE BANNER HOME PAGE*/
   &__title {
     margin-left: 20px;
     line-height: 24px;
@@ -66,6 +68,7 @@
   }
 }
 
+/* BANNER ABOUT PAGE */
 .bannerAbout {
   margin-top: 17px;
   width: 336px;
@@ -99,6 +102,7 @@
     width: 2305px;
     height: 362px;
   }
+  /*IMAGE BANNER ABOUT PAGE*/
   > img {
     object-position: 50%;
     border-radius: 10px;

@@ -4,11 +4,11 @@ import { useParams } from 'react-router-dom'
 import Dropdowns from '../Collapse'
 import Rating from '../Utils/Rating'
 import Tags from '../Utils/Tags'
-import '../../styles/Saas/components/_singleLocationDescription.scss'
-import '../../styles/Saas/main.scss'
+import '../../styles/sass/components/_singleLocation.scss'
+import '../../styles/sass/main.scss'
 import Equipments from '../Equipments'
 
-export default function SingleLocationDescription() {
+export default function SingleLocation() {
   const { id } = useParams()
   const locationById = accomodations.find((location) => location.id === id)
   //console.log(!locationById)
@@ -28,18 +28,17 @@ export default function SingleLocationDescription() {
             <img src={locationById.host.picture} alt="Hébergeur" />
           </div>
         </div>
-      </section>
-
-      <section className="singleLocation-tags-dropdowns">
         <div className="singleLocation__tags flex">
           {locationById.tags.map((tag, index) => (
             <Tags key={index} getTag={tag} />
           ))}
         </div>
-        <div className='singleLocation-dropdowns'>
+      </section>
+
+      <section className="singleLocation-dropdowns">
         <Dropdowns title="Description" description={locationById.description} />
+
         <Equipments />
-        </div>
       </section>
     </>
   )

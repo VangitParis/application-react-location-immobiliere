@@ -1,5 +1,7 @@
 @import '../utils/variables';
 @import '../utils/mixins';
+
+/* TAGS */
 .tag {
   text-align: center;
   color: white;
@@ -25,7 +27,7 @@
     border-radius: 10px;
     padding: 0px 30px;
   }
-
+  /* TAGS TEXT*/
   &__text {
     color: $color-secondary;
     font-size: 10px;

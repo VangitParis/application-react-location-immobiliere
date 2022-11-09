@@ -1,0 +1,62 @@
+@import '../utils/mixins';
+
+
+/* HOME PAGE STYLES */
+
+/* MAIN HOME PAGE*/
+._body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 938px;
+  width: 336px;
+  position: absolute;
+  top: 70px;
+  height: 938px;
+  width: 336px;
+
+  @include MobileS {
+    width: 300px;
+    margin-left: 15px;
+  }
+  @include MobileL {
+    width: 375px;
+  }
+  @include Tab {
+    width: 690px;
+  }
+  @include DesktopS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 994px;
+    top: 90px;
+  }
+  @include Desktop {
+    margin-left: 180px;
+    margin-right: 180px;
+    width: 1240px;
+    top: 152px;
+  }
+
+  @include DesktopXL {
+    width: 2280px;
+    top: 190px;
+    margin-left: 145px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

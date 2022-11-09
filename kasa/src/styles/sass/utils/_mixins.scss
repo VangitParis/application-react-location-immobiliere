@@ -1,6 +1,6 @@
 @import './variables';
 
-
+/*-------MEDIA-QUERIES------*/
 @mixin MobileS{
     @media screen and (width:map-get($breakpoints, MobileS)){
         @content;

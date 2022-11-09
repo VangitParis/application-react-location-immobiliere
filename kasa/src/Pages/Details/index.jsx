@@ -1,26 +1,23 @@
-import '../../styles/Saas/pages/_details.scss'
+import '../../styles/sass/pages/_details.scss'
 import React from 'react'
-import SingleLocation from '../../components/getSingleLocation'
-import Description from '../../components/SingleLocationDescription'
+import Gallery from '../../components/Gallery'
 import { useParams } from 'react-router-dom'
 import accomodations from '../../datas/locationslist.json'
 import Error from '../Error'
+import SingleLocation from '../../components/SingleLocation'
 
 export default function Details() {
   const { id } = useParams()
   const locationById = accomodations.find((location) => location.id === id)
 
- return !locationById ? (
+  return !locationById ? (
     <>
-     <Error/>
+      <Error />
     </>
- ):(
-    <main className="details__main">
-    <SingleLocation />
-    <Description />
-  </main>
+  ) : (
+    <main className="details__main ">
+      <Gallery />
+      <SingleLocation />
+    </main>
   )
-    
-
-  
 }

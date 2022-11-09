@@ -1,0 +1,45 @@
+@import '../utils/mixins';
+
+/* ABOUT PAGE STYLE*/
+
+/* MAIN ABOUT PAGE */
+.main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @include DesktopS {
+    width: 920px;
+    margin-top: 90px;
+    margin-left: 23px;
+  }
+  @include Desktop {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 1240px;
+  }
+  @include DesktopXL {
+    width: 2310px;
+  }
+ 
+
+//----COLLAPSES STYLES ABOUT PAGE ----/// 
+}
+.dropdownsAbout {
+  width: 89%;
+  @include MobileS {
+    width: 95%;
+  }
+  @include Desktop {
+    width: 76%;
+  }
+  .dropdown__open__description{
+    height: 156px;
+  }
+  .dropdown__open__text{
+    height: 146px;
+  }
+ }
+  

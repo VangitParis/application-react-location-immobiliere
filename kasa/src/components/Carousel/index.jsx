@@ -1,4 +1,4 @@
-import '../../styles/Saas/components/_carousel.scss'
+import '../../styles/sass/components/_carousel.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -15,8 +15,6 @@ export default function Carousel({ pictures }) {
         onClick={() => {
           item === 0 ? setItem(pictures.length - 1) : setItem(item - 1)
         }}
-
-        //item === 0 ? setItem (pictures.length -1) : setItem(item-1)
       >
         <FontAwesomeIcon icon={faChevronLeft} />
       </button>
@@ -34,8 +32,6 @@ export default function Carousel({ pictures }) {
         className="carousel__button carousel__button__Right"
         onClick={() => {
           item === pictures.length - 1 ? setItem(0) : setItem(item + 1)
-
-          //item === pictures.length -1 ? setItem(0) : setItem (item+1)
         }}
       >
         <FontAwesomeIcon icon={faChevronRight} />

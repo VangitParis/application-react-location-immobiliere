@@ -1,7 +1,7 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 
-/* .Thumb */
+/* THUMB  CARDS */ 
 .Thumb {
    @include Tab{
     height: 100%;
@@ -12,6 +12,7 @@
         width: 33%;
         }
     &__Rectangle2 {
+          /*BACKGROUND CARDS*/ 
         background: $background-Gradient;
         position: relative;
         height: 255px;
@@ -43,8 +44,9 @@
         }
         
         }
+    
     &__imgLogement{
-     
+        /* IMG LOGEMENT CARDS*/  
         position: relative;
         height: 255px;
         width: 335px;

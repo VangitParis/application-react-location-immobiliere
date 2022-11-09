@@ -1,6 +1,6 @@
 @import '../utils/mixins';
 
-/* _Header-m */
+/* HEADER  */
 .header {
   display: flex;
   align-items: center;
@@ -10,20 +10,19 @@
   margin-top: 20px;
   border-radius: 0px;
   @include MobileS {
-    //margin-left: 15px;
+   
     width: 290px;
   }
   @include MobileL {
     width: 385px;
   }
-  @include Tab{
+  @include Tab {
     width: 90%;
   }
   @include DesktopS {
-
     width: 905px;
     height: 100%;
-   // left: 40px;
+    // left: 40px;
   }
   @include Desktop {
     width: 1240px;
@@ -43,10 +42,10 @@
     width: 150px;
     height: 47px;
     @include DesktopS {
-        height: 0;
-        > img {
-            width: 210px;
-          }
+      height: 0;
+      > img {
+        width: 210px;
+      }
     }
     @include Desktop {
       width: 210px;
@@ -63,7 +62,7 @@
       }
     }
   }
-  /* _NAV */
+  /* NAVBAR */
   &__nav {
     position: absolute;
     height: 17px;
@@ -78,33 +77,32 @@
     @include MobileL {
       left: 255px;
     }
-    @include Tab{
-        left: 75%;
+    @include Tab {
+      left: 75%;
     }
 
     @include DesktopS {
-        height: 34px;
-        width: 224px;
-        left: 745px;
-        top: 40px;
-        margin-left: 0;
-        margin-top: 0;
-
+      height: 34px;
+      width: 224px;
+      left: 745px;
+      top: 40px;
+      margin-left: 0;
+      margin-top: 0;
     }
     @include Desktop {
-        height: 34px;
-        width: 295px;
-        //left: 1040px;
-        left: 72.5%;
-        top: 60px;
+      height: 34px;
+      width: 295px;
+      //left: 1040px;
+      left: 72.5%;
+      top: 60px;
     }
     @include DesktopXL {
-        height: 50px;
-        left: 75%;
-        width: 487px;
+      height: 50px;
+      left: 75%;
+      width: 487px;
     }
   }
-  /* ACCUEIL * A PROPOS */
+  /* LINKS === HOME * ABOUT */
 }
 
 ul {
@@ -117,7 +115,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   min-inline-size: fit-content;
-  
+
   @include DesktopS {
     font-size: 20px;
     text-transform: none;

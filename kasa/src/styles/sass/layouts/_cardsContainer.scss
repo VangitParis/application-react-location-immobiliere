@@ -1,5 +1,7 @@
 @import '../utils/mixins';
 
+/* CARDS - CARDSCONTAINER*/
+
 .gallery {
   height: 805px;
   width: 335px;
@@ -23,7 +25,6 @@
       flex-wrap: WRAP;
       justify-content: space-between;
       align-items: center;
-
       width: 100%;
     }
   }

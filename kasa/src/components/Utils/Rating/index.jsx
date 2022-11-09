@@ -3,7 +3,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import accomodations from '../../../datas/locationslist.json'
-import '../../../styles/Saas/components/_stars.scss'
+import '../../../styles/sass/components/_stars.scss'
 
 export default function Rating() {
   const { id } = useParams()
@@ -11,18 +11,24 @@ export default function Rating() {
   //console.log(locationById.rating)
 
   return (
-    <div  className="star">
+    <div className="star">
       {Array.from(Array(5), (e, index) => {
         if (index < parseInt(locationById.rating)) {
           return (
-            <span key={`${locationById.id}-${index}`}  className="star__completed">
-               <FontAwesomeIcon icon={faStar}/>
+            <span
+              key={`${locationById.id}-${index}`}
+              className="star__completed"
+            >
+              <FontAwesomeIcon icon={faStar} />
             </span>
           )
         } else {
           return (
-            <span key={`${locationById.id}-${index}`} className="star__noCompleted">
-             <FontAwesomeIcon icon={faStar}/>
+            <span
+              key={`${locationById.id}-${index}`}
+              className="star__noCompleted"
+            >
+              <FontAwesomeIcon icon={faStar} />
             </span>
           )
         }

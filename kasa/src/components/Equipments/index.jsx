@@ -1,4 +1,4 @@
-import '../../styles/Saas/components/_equipments.scss'
+import '../../styles/sass/components/_equipments.scss'
 import { useParams } from 'react-router-dom'
 import accomodations from '../../datas/locationslist.json'
 import Dropdowns from '../Collapse'
