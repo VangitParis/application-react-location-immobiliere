@@ -10,41 +10,40 @@
   justify-content: center;
   align-items: center;
   height: 938px;
-  width: 336px;
+  width: 90%;
   position: absolute;
   top: 70px;
-  height: 938px;
-  width: 336px;
+ 
+ 
 
   @include MobileS {
-    width: 300px;
+    width: 94%;
     margin-left: 15px;
   }
   @include MobileL {
-    width: 375px;
+    width: 88%;
   }
   @include Tab {
-    width: 690px;
+    width: 90%;
   }
   @include DesktopS {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 994px;
+    width: 90%;
     top: 90px;
   }
   @include Desktop {
-    margin-left: 180px;
-    margin-right: 180px;
-    width: 1240px;
-    top: 152px;
+    
+    width: 86%;
+    top: 130px;
   }
 
   @include DesktopXL {
-    width: 2280px;
+    width: 90%;
     top: 190px;
-    margin-left: 145px;
+    
   }
 }
 

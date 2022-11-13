@@ -3,13 +3,18 @@
 /* STARS */
 .star {
   height: 18px;
-  width: 98px;
+  width: 28%;
   display: flex;
   padding-left: 0;
   justify-content: space-between;
 
+  @include Tab{
+    width: 14%;
+    margin-top: 1%;
+  }
   @include DesktopS {
-    width: 107px;
+    width: 11%;
+    margin-top: 1%;
   }
   @include Desktop {
     width: 160px;

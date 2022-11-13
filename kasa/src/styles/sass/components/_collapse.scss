@@ -3,41 +3,32 @@
 /*Collapse Component DROPDOWNS*/
 .dropdown {
   height: 30px;
-  width: 335px;
+  width: 100%;
   left: 20px;
   top: 326px;
-  border-radius: 0px;
+  border-radius: 5px;
   margin-top: 19px;
-
-  @include MobileS {
-    width: 305px;
-  }
-  @include MobileL {
-    width: 380px;
-  }
-  @include Tab{
-    width: 90%;
+  @include Tab {
+    width: 49%;
   }
   @include DesktopS {
     width: 100%;
-    height: 47px;
-
-    margin-top: 31px;
+    height: 40px;
+    margin-bottom: 1%;
   }
   @include Desktop {
-    
+    height: 47px;
   }
   @include DesktopXL {
-   
+    margin-bottom: 3%;
     height: 67px;
-    margin-top: 61px;
   }
   /*CLOSED DROPDOWNS*/
   &__closed {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 335px;
+    width: 100%;
     height: 30px;
     left: 0px;
     top: 0px;
@@ -46,53 +37,52 @@
     border: hidden;
     margin-bottom: 20px;
     cursor: pointer;
-    @include MobileS {
-      width: 305px;
-    }
-    @include MobileL {
-      width: 380px;
-    }
-    @include Tab{
-        width: 690px;
-      }
+    // @include MobileS {
+    //   width: 100%;
+    // }
+    // @include MobileL {
+    //   width: 380px;
+    // }
+    // @include Tab {
+    //   width: 100%;
+    // }
     @include DesktopS {
-      height: 47px;
-      width: 745px;
+      height: 40px;
+      
     }
-    @include Desktop {
+    @include Desktop{
       height: 47px;
-      width: 100%;
     }
+   
     @include DesktopXL {
-        width: 1950px;
-        height: 67px;
+     
+      height: 80px;
     }
   }
-   /*LARGE DROPDOWNS*/
+  /*LARGE DROPDOWNS*/
   &__large {
     display: grid;
-    width: 335px;
+    width: 100%;
     height: 30px;
     left: calc(50% - 335px / 2);
     top: calc(50% - 30px / 2 - 15px);
-    @include Tab{
-        width: 100%;
+    @include Tab {
+      width: 100%;
     }
     @include DesktopS {
-        width: 100%;
+      width: 100%;
     }
     @include Desktop {
-     
     }
   }
-   /*FLEXBOX DROPDOWNS*/
+  /*FLEXBOX DROPDOWNS*/
   &__flexB {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    //width: 100%;
   }
-   /*TITLE DROPDOWNS*/
+  /*TITLE DROPDOWNS*/
   &__title {
     font-size: 13px;
     width: 57px;
@@ -121,129 +111,95 @@
     @include Desktop {
       font-size: 24px;
     }
-    @include DesktopXL{
-   font-size: 34px;
+    @include DesktopXL {
+      font-size: 48px;
     }
   }
-   /*SVG CHEVRONS DROPDOWNS*/
+  /*SVG CHEVRONS DROPDOWNS*/
   svg {
     height: 100%;
     width: 13px;
     margin-right: 15px;
     color: $color-white;
     @include DesktopS {
-     
       width: 20px;
     }
-    @include DesktopXL{
-        width: 30px;
+    @include DesktopXL {
+      width: 40px;
+      margin-right: 35px;
     }
   }
- /*OPEN DROPDOWNS*/
+  /*OPEN DROPDOWNS*/
   &__open {
     border-radius: 5px;
     background-color: $color-primary;
     border: hidden;
-    width: 335px;
+    //width: 100%;
     height: 30px;
-    margin-bottom: 120px;
+    margin-bottom: 170px;
     cursor: pointer;
-    @include MobileS {
-      width: 305px;
-    }
-    @include MobileL {
-      width: 380px;
-    }
-    @include Tab{
-        width: 690px;
-      }
+
+    
     @include DesktopS {
-        width: 100%;
-      height: 47px;
+      width: 100%;
+      height: 40px;
     }
     @include Desktop {
-      
+      height: 47px;
     }
 
     @include DesktopXL {
-      
-      height: 67px;
+      height: 80px;
+      margin-bottom: 270px;
     }
- /*OPEN DESCRIPTION DROPDOWNS*/
+    /*OPEN DESCRIPTION DROPDOWNS*/
     &__description {
       top: 30px;
       height: 144px;
-      width: 335px;
+      width: 100%;
       background-color: $color-secondary;
-      margin-top: -120px;
+      margin-top: -170px;
       z-index: 2;
       border-radius: 0 0 5px 5px;
-      height: auto;
+      
 
-      @include MobileS{
-        width: 90%;
-        
-      }
-      @include MobileL {
-        width: 380px;
-      }
-      @include Tab{
-        width: 100%;
-      }
+     
       @include DesktopS {
-        //height: 223px;
-        width:100%;
-        left: 0px;
-        top: 38px;
         border-radius: 0 0 10px 10px;
         height: 249px;
       }
-      @include Desktop {
-        //height: 147px;
-       
-        
-        
-      }
       @include DesktopXL {
-       
+        margin-top: -270px;
+     
       }
     }
-     /* OPEN TEXT DROPDOWNS*/
+    /* OPEN TEXT DROPDOWNS*/
     &__text {
       text-transform: none;
-      padding-top: 11px;
-      padding-bottom: 30px;
       font-weight: 400;
       font-size: 12px;
       line-height: 17px;
       list-style: none;
       bottom: -462.62%;
       height: 144px;
-      width: 292px;
-      top: 24px;
-      height: fit-content;
-
+      width: 100%;
+      padding-top: 3%;
+      //height: max-content;
+      
       @include DesktopS {
         line-height: 26px;
         height: 156px;
         padding-bottom: 0;
         font-size: 20px;
-       
-        width: 50%;
-        left: 18px;
-        top: 74px;
         padding-left: 16px;
       }
       @include Desktop {
         font-size: 24px;
-        
-        
-        left: 18px;
-        top: 74px;
-        padding-top: 20px;
+        height: 156px;
+        //padding-top: 20px;
         padding-bottom: 10px;
       }
-      @include DesktopXL{
+      @include DesktopXL {
         line-height: 43px;
         font-size: 30px;
         padding-top: 20px;

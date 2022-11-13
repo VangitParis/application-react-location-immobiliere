@@ -16,7 +16,7 @@ export default function SingleLocation() {
   return (
     <>
       <section className="singleLocation">
-        <div className='singleLocation__title"'>
+        <div className='singleLocation__title'>
           <h1 className="singleLocation__title__text">{locationById.title}</h1>
           <p className="singleLocation__location">{locationById.location}</p>
         </div>

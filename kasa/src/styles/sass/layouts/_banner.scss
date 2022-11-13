@@ -19,7 +19,7 @@
   align-items: center;
   margin-top: 20px;
   @include MobileS{
-    width: 300px;
+    width: 100%;
   }
   @include MobileL {
     width: 375px;
@@ -37,11 +37,11 @@
   }
   @include Desktop {
     height: 223px;
-    width: 1240px;
+    width: 100%;
     
   }
   @include DesktopXL {
-    width: 2305px;
+    width: 100%;
     height: 462px;
   }
   /*TITLE BANNER HOME PAGE*/
@@ -51,19 +51,40 @@
     font-size: 24px;
     font-weight: 500;
     height: 48px;
-    width: 213px;
+    width: 66%;
     left: 36px;
     top: 114px;
-    @include Desktop {
+    @include MobileS{
+      width: 71%;
+    }
+    @include MobileL{
+      width: 59%;
+    }
+    @include Tab{
+      width: 51%;
       height: auto;
       width: auto;
+      vertical-align: center;
+      margin-left: 25%;
+    }
+    @include DesktopS{
+      height: auto;
+      width: auto;
+      vertical-align: center;
+      margin-left: 0;
+      font-size: 35px;
+      
+    }
+    @include Desktop {
+      height: auto;
+      width: 56%;
       left: 373px;
       top: 249px;
       font-size: 48px;
       vertical-align: center;
     }
     @include DesktopXL {
-      font-size: 68px;
+      font-size: 78px;
     }
   }
 }
@@ -71,36 +92,29 @@
 /* BANNER ABOUT PAGE */
 .bannerAbout {
   margin-top: 17px;
-  width: 336px;
+  width: 100%;
   height: 223px;
   background: #f7f7f7;
   border-radius: 25px;
   > h1 {
     display: none;
   }
-  @include MobileS{
-    width: 310px;
-  }
-  @include MobileL{
-    width: 90%;
-  }
   @include Tab{
     width: 90%;
   }
 
   @include DesktopS {
-    width: 920px;
+    margin-top: 0;
+    width: 100%;
     border-radius: 25px;
     height: 223px;
+    margin-bottom: 1%;
   }
-  @include Desktop {
-    width: 1240px;
 
-   
-  }
   @include DesktopXL{
-    width: 2305px;
-    height: 362px;
+    margin-bottom: 3%;
+    height: 423px;
+
   }
   /*IMAGE BANNER ABOUT PAGE*/
   > img {

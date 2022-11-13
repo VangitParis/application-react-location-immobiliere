@@ -12,31 +12,38 @@
   }
   /* 404 ERROR PAGE  */
   &__404 {
-    left: 88px;
-    top: 262px;
     font-size: 96px;
     font-weight: 700;
     line-height: 137px;
     letter-spacing: 0em;
     font-family: $main-font;
     color: $color-primary;
-    margin-top: 80px;
-    margin-bottom: 11px;
+    margin-top: 50%;
+    width: 100%;
+    @include Tab{
+      margin-top: 20%;
+
+    }
     @include DesktopS {
-      width: 100%;
       font-size: 148px;
+      margin-bottom: 5%;
     }
     @include Desktop {
       font-size: 288px;
-      margin-bottom: 66px;
-      margin-top: 240px;
+      margin-top: 15%;
+      margin-bottom: 10%;
+    }
+    @include DesktopXL {
+      font-size: 488px;
+      margin-top: 20%;
+      margin-bottom: 15%;
     }
   }
   /* TITLE ERROR PAGE*/
   &__title {
     margin: auto;
     height: 52px;
-    width: 260px;
+    width: 100%;
     left: 57px;
     top: 372px;
     font-size: 18px;
@@ -44,17 +51,16 @@
     line-height: 26px;
     letter-spacing: 0em;
     margin-bottom: 133px;
-    @include Tab {
-      width: 100%;
-    }
-    @include DesktopS {
-      width: 100%;
-    }
+
     @include Desktop {
       font-size: 36px;
-      width: 872px;
+
       line-height: 52px;
-      margin-bottom: 182px;
+      margin-bottom: 15%;
+    }
+    @include DesktopXL {
+      font-size: 60px;
+      margin-bottom: 20%;
     }
   }
   /* TEXT TO RETURN HOME ERROR PAGE*/
@@ -64,12 +70,14 @@
     text-decoration: underline;
     font-family: $main-font;
     height: 20px;
-    width: 221px;
+    width: 100%;
     left: 76px;
     top: 557px;
     @include Desktop {
       font-size: 18px;
-      width: 284px;
+    }
+    @include DesktopXL {
+      font-size: 30px;
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/sass/layouts/_banner.scss'
 import '../../styles/sass/main.scss'
+
 export default function Banner() {
     return (
        <section  className="banner">

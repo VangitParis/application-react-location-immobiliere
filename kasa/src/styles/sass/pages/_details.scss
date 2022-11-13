@@ -5,12 +5,12 @@
 .details{
   &__main{
     height: auto;
-    width: 335px;
+    width: 90%;
     left: 20px;
     margin-top: 17px;
     margin-bottom: 100px;
     @include MobileS{
-      width: 96%;
+      width: 94%;
     }
     @include MobileL{
       width: 90%;

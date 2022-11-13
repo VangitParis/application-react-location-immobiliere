@@ -5,46 +5,52 @@
   display: flex;
   align-items: center;
   height: 47px;
-  width: 335px;
+  width: 89%;
   //margin-left: 20px;
   margin-top: 20px;
   border-radius: 0px;
   @include MobileS {
-   
-    width: 290px;
+  width: 94%;
   }
   @include MobileL {
-    width: 385px;
+  width: 89%;
   }
   @include Tab {
-    width: 90%;
+  width: 90%;
   }
   @include DesktopS {
-    width: 905px;
+    width: 90%;
     height: 100%;
     // left: 40px;
   }
   @include Desktop {
-    width: 1240px;
+    width: 86%;
     //left: 80px;
 
     margin-top: 40px;
     height: 68px;
   }
   @include DesktopXL {
-    width: 2305px;
+    width: 90%;
     //left: 121px;
-    height: 98px;
+    height: 115px;
+    margin-top: 30px;
   }
 
   /* .LOGO */
   &__logo {
     width: 150px;
     height: 47px;
-    @include DesktopS {
-      height: 0;
+    @include MobileS {
+      width: 40%;
       > img {
-        width: 210px;
+        width: 100%;
+      }
+    }
+    @include DesktopS {
+      height: 48px;
+      > img {
+        width: 100%;
       }
     }
     @include Desktop {
@@ -55,10 +61,10 @@
       }
     }
     @include DesktopXL {
-      height: 98px;
-      width: 310px;
+      height: 115px;
+      width: 15%;
       > img {
-        width: 310px;
+        width: 100%;
       }
     }
   }
@@ -67,27 +73,27 @@
     position: absolute;
     height: 17px;
     width: 167px;
-    left: 200px;
+    left: 54%;
     display: flex;
     text-align: right;
     //margin-top: 15px;
     @include MobileS {
-      left: 170px;
+      left: 49%;
+    width: 47%;
     }
     @include MobileL {
-      left: 255px;
+      left: 58%;
     }
     @include Tab {
       left: 75%;
     }
 
     @include DesktopS {
-      height: 34px;
-      width: 224px;
-      left: 745px;
+      height: 24px;
+      width: 23%;
+      left: 73%;
       top: 40px;
-      margin-left: 0;
-      margin-top: 0;
+    
     }
     @include Desktop {
       height: 34px;
@@ -97,9 +103,9 @@
       top: 60px;
     }
     @include DesktopXL {
-      height: 50px;
-      left: 75%;
-      width: 487px;
+      height: 55px;
+      left: 76%;
+      width: 19%;
     }
   }
   /* LINKS === HOME * ABOUT */

@@ -2,7 +2,7 @@
 
 /* FOOTER STYLE : ABOUT, DETAILS, ERROR PAGES */
 .footerAbout, .footerError, .footerDetails{
-    top: 1200px;
+    top: 115%;
     position: absolute;
     background: #000000;
     display: flex;
@@ -11,10 +11,22 @@
     align-items: center;
     height: 209px;
     width: 100%;
+    font-size: 12px;
+    @include DesktopXL{
+      top: 2250px;
+    }
     /*LOGO FOOTER*/
      .footerLogo {
         width: 122px;
         height: 40px;
+        >img{
+          width: 100%;
+        }
+        @include DesktopXL{
+          width: 8%;
+          height: 68px;
+          
+        }
        
     }
      /*TEXT FOOTER*/
@@ -25,6 +37,10 @@
         height: 46px;
         display: flex;
         align-items: flex-end;
+        @include DesktopXL{
+          font-size: 30px;
+          height: 68px;
+        }
   }
 }
 /*FOOTER HOME STYLE*/
@@ -39,26 +55,32 @@
   justify-content: center;
   align-items: center;
   left: 0;
-
+ @include Tab{
+  top: 3200px;
+ }
   @include DesktopS {
     height: 209px;
     width: 100%;
     top: 2400px;
   }
   @include Desktop {
-    top: 3400px;
+    top: 3270px;
   }
   @include DesktopXL {
-    width: 2560px;
+    top: 5800px;
     height: 400px;
+
   }
   /*FOOTER HOME STYLE LOGO*/
   .footerLogo {
     width: 122px;
     height: 40px;
     @include DesktopXL {
-      width: 210px;
-      height: 70px;
+      width: 8%;
+      height: 110px;
+      >img{
+        width: 100%;
+      }
     }
   }
   /*FOOTER HOME STYLE TEXT*/
@@ -70,7 +92,8 @@
     display: flex;
     align-items: flex-end;
     @include DesktopXL {
-      font-size: 24px;
+      font-size: 30px;
+
     }
   }
 }

@@ -8,38 +8,68 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  @include MobileS{
+    width: 94%;
+  }
+  @include MobileL{
+    width: 88%;
+  }
+  @include Tab{
+    width: 100%;
+
+  }
   @include DesktopS {
-    width: 920px;
-    margin-top: 90px;
-    margin-left: 23px;
+    width: 90%;
+    margin-top: 40px;
   }
   @include Desktop {
-    margin-top: 40px;
     margin-left: 100px;
     margin-right: 100px;
-    width: 1240px;
+    width: 86%;
+
   }
   @include DesktopXL {
-    width: 2310px;
+    width: 90%;
   }
  
 
 //----COLLAPSES STYLES ABOUT PAGE ----/// 
 }
 .dropdownsAbout {
-  width: 89%;
-  @include MobileS {
-    width: 95%;
+  width: 100%;
+  
+  @include Tab{
+    width: 89%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  @include Desktop {
-    width: 76%;
+  @include DesktopS {
+    width: 80%;
+  }
+  @include Desktop{
+    width: 77%;
+  }
+  @include DesktopXL {
+    width: 84%;
+    
   }
   .dropdown__open__description{
-    height: 156px;
+    height: 146px;
+    @include DesktopXL{
+      height: 246px;
+      
+    }
   }
   .dropdown__open__text{
-    height: 146px;
+
+    height: 91px;
+    @include DesktopXL{
+      font-size: 35px;
+      height: 120px;
+    }
   }
  }
   
