@@ -57,18 +57,22 @@
     
   }
   .dropdown__open__description{
-    height: 146px;
+    height: 146%;
+    padding-top: 1%;
     @include DesktopXL{
-      height: 246px;
-      
+    padding-top: 0;
+    height: 146%;
+    
     }
+   
   }
   .dropdown__open__text{
 
-    height: 91px;
+    height: auto;
     @include DesktopXL{
       font-size: 35px;
-      height: 120px;
+      margin-left: 1%;
+     
     }
   }
  }

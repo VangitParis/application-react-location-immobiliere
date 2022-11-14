@@ -36,7 +36,7 @@ export default function Dropdowns({ title, description }) {
           <FontAwesomeIcon icon={faChevronUp} />
         </button >
         
-        <ul className="dropdown__open dropdown__open__description">
+        <ul className="dropdown__open dropdown__open__description securite">
           <li className="dropdown__open__text">{description}</li>
         </ul>
      

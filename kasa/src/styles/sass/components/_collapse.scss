@@ -112,6 +112,7 @@
     }
     @include DesktopXL {
       font-size: 48px;
+      margin-left: 2%;
     }
   }
   /*SVG CHEVRONS DROPDOWNS*/
@@ -166,7 +167,7 @@
         height: 249px;
       }
       @include DesktopXL {
-        margin-top: -270px;
+        margin-top: -280px;
         height: 450px;
       }
     }
