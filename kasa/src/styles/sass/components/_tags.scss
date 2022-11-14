@@ -18,7 +18,7 @@
   width: 84px;
   left: 0px;
   top: 0px;
-  border-radius: 5px;
+ 
   @include Desktop {
     height: 25px;
     width: 115px;
@@ -26,6 +26,12 @@
     top: 0px;
     border-radius: 10px;
     padding: 0px 30px;
+  }
+  @include DesktopXL{
+    height: 47px;
+    width: 47%;
+    border-radius: 20px;
+   
   }
   /* TAGS TEXT*/
   &__text {
@@ -35,5 +41,9 @@
     @include Desktop {
       font-size: 14px;
     }
+    @include DesktopXL {
+      font-size: 24px;
+    }
+
   }
 }

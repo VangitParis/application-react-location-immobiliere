@@ -19,12 +19,13 @@
       width: 90%;
     }
     @include DesktopS{
-      width: 89%;
-      margin-top: 90px;
-    }
+      width: 90%;
+     
+  }
+    
     @include Desktop{
       width: 86%;
-      margin-top: 20px;
+      
 
     }
     @include DesktopXL{

@@ -1,8 +1,6 @@
 @import '../utils/mixins';
 /*EQUIPMENTS DROPDOWN*/
 .equipments{
-    line-height: 21px;
-    @include DesktopS{
-        line-height: 26px;
-    }
+    line-height: 142.6%;
+    
 }
