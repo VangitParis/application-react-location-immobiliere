@@ -14,14 +14,13 @@ export default function Header() {
       <Link to="/" className="header__logo">
         {logo}
       </Link>
-
       <nav className="header__nav">
         <ul>
-          {/*splitlocation permet de trouver sur quelle page se trouve le lien afin d'appliquer le style avec la className : active*/}
+          {/*splitlocation permet de trouver sur quelle page se trouve le lien 
+          afin d'appliquer le style avec la className : active*/}
           <li className={splitLocation[1] === '' ? 'active' : ''}>
             <Link to="/">Accueil</Link>
           </li>
-
           <li className={splitLocation[1] === 'apropos' ? 'active' : ''}>
             <Link to="/apropos">A Propos</Link>
           </li>

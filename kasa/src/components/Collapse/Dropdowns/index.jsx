@@ -11,7 +11,12 @@ import '../../../styles/sass/pages/_about.scss'
 
 export default function Dropdowns({ title, description }) {
   const [isOpen, setIsOpen] = useState(true)
-  description = Array.isArray(description) ? description : [description]
+  const handleCollapse = (e,on,off) => {
+    e.preventDefault();
+    
+    console.log('collapse click :', e);
+    
+  }
 
   return isOpen ? (
     <div className="dropdown ">
@@ -19,7 +24,7 @@ export default function Dropdowns({ title, description }) {
 
       <button
         className="dropdown__closed dropdown__flexB"
-        onClick={() => setIsOpen(false)}
+        onClick={(e) => handleCollapse(e,setIsOpen(false)) }
       >
         <h2 className="dropdown__title">{title} </h2>
         <FontAwesomeIcon icon={faChevronDown} />
@@ -30,7 +35,7 @@ export default function Dropdowns({ title, description }) {
       <nav className="dropdown__large">
         <button
           className="dropdown__open dropdown__flexB"
-          onClick={() => setIsOpen(true)}
+          onClick={(e) => handleCollapse(e,setIsOpen(true))}
         >
           <h2 className="dropdown__title">{title} </h2>
           <FontAwesomeIcon icon={faChevronUp} />
