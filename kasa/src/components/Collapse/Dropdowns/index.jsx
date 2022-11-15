@@ -8,14 +8,11 @@ import PropTypes from 'prop-types'
 import '../../../styles/sass/components/_collapse.scss'
 import '../../../styles/sass/pages/_about.scss'
 
-
 export default function Dropdowns({ title, description }) {
   const [isOpen, setIsOpen] = useState(true)
-  const handleCollapse = (e,on,off) => {
-    e.preventDefault();
-    
-    console.log('collapse click :', e);
-    
+  const handleCollapse = (e) => {
+    e.preventDefault()
+    console.log('collapse click :', e)
   }
 
   return isOpen ? (
@@ -24,7 +21,7 @@ export default function Dropdowns({ title, description }) {
 
       <button
         className="dropdown__closed dropdown__flexB"
-        onClick={(e) => handleCollapse(e,setIsOpen(false)) }
+        onClick={(e) => handleCollapse(e, setIsOpen(false))}
       >
         <h2 className="dropdown__title">{title} </h2>
         <FontAwesomeIcon icon={faChevronDown} />
@@ -35,16 +32,15 @@ export default function Dropdowns({ title, description }) {
       <nav className="dropdown__large">
         <button
           className="dropdown__open dropdown__flexB"
-          onClick={(e) => handleCollapse(e,setIsOpen(true))}
+          onClick={(e) => handleCollapse(e, setIsOpen(true))}
         >
           <h2 className="dropdown__title">{title} </h2>
           <FontAwesomeIcon icon={faChevronUp} />
-        </button >
-        
+        </button>
+
         <ul className="dropdown__open dropdown__open__description securite">
           <li className="dropdown__open__text">{description}</li>
         </ul>
-     
       </nav>
     </div>
   )
