@@ -96,10 +96,10 @@
     font-weight: 400;
 
     @include DesktopS {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
-      height: 34px;
-      width: 30%;
+      height: 20px;
+      width: 24%;
       left: 18px;
       top: 6px;
       margin-left: 14px;
@@ -109,6 +109,7 @@
     }
     @include Desktop {
       font-size: 24px;
+      height: 30px;
     }
     @include DesktopXL {
       font-size: 48px;
@@ -122,7 +123,10 @@
     margin-right: 15px;
     color: $color-white;
     @include DesktopS {
-      width: 20px;
+      width: 15px;
+    }
+    @include Desktop{
+      width: 25px;
     }
     @include DesktopXL {
       width: 40px;

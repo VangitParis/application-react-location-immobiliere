@@ -1,7 +1,7 @@
 import accomodations from '../../datas/locationslist.json'
 import Carousel from '../Carousel'
 import { useParams } from 'react-router-dom'
-import '../../styles/sass/components/_gallery.scss'
+
 
 export default function Gallery() {
   const { id } = useParams()

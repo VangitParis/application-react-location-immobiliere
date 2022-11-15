@@ -32,7 +32,7 @@
   @include DesktopXL {
     width: 90%;
   }
- 
+
 
 //----COLLAPSES STYLES ABOUT PAGE ----/// 
 }
@@ -57,20 +57,43 @@
     
   }
   .dropdown__open__description{
-    height: 146%;
+    height: 144px;
     padding-top: 1%;
+    @include Tab{
+      height: 166px;
+    }
+    @include DesktopS{
+      height: 176px;
+    }
+    @include Desktop{
+      height: 146%;
+      padding-top: 2%;
+    }
     @include DesktopXL{
     padding-top: 0;
-    height: 146%;
+    
     
     }
    
   }
   .dropdown__open__text{
 
-    height: auto;
+    height: 156px;
+   
+    
+    
+    @include DesktopS{
+      height: auto;
+      font-size: 20px;
+      padding-top: 2%;
+    }
+    @include Desktop{
+      padding-top: 1%;
+      height: 65%;
+      font-size: 24px;
+    }
     @include DesktopXL{
-      font-size: 35px;
+      font-size: 36px;
       margin-left: 1%;
      
     }

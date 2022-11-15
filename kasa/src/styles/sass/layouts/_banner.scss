@@ -7,41 +7,28 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../../../assets/homeImg.png');
   background-position: center;
-  display: table-cell; /* comportement visuel de cellule */
-  vertical-align: middle;
-  width: 335px;
+
+  width: 100%;
   height: 111px;
-  text-align: left;
+
   border-radius: 10px;
   background-size: cover;
   color: #ffffff;
   display: flex;
   align-items: center;
   margin-top: 20px;
-  @include MobileS{
-    width: 100%;
-  }
-  @include MobileL {
-    width: 375px;
-  }
-  @include Tab{
-    width: 690px;
-  }
+
   @include DesktopS {
     justify-content: center;
     height: 168px;
-    width: 920px;
-    left: 100px;
+
     top: 171px;
     border-radius: 25px;
   }
   @include Desktop {
     height: 223px;
-    width: 100%;
-    
   }
   @include DesktopXL {
-    width: 100%;
     height: 462px;
   }
   /*TITLE BANNER HOME PAGE*/
@@ -52,28 +39,26 @@
     font-weight: 500;
     height: 48px;
     width: 66%;
-    left: 36px;
-    top: 114px;
-    @include MobileS{
+
+    @include MobileS {
       width: 71%;
     }
-    @include MobileL{
+    @include MobileL {
       width: 59%;
     }
-    @include Tab{
+    @include Tab {
       width: 51%;
       height: auto;
       width: auto;
       vertical-align: center;
       margin-left: 25%;
     }
-    @include DesktopS{
+    @include DesktopS {
       height: auto;
       width: auto;
       vertical-align: center;
       margin-left: 0;
       font-size: 35px;
-      
     }
     @include Desktop {
       height: auto;
@@ -95,11 +80,11 @@
   width: 100%;
   height: 223px;
   background: #f7f7f7;
-  border-radius: 25px;
-  > h1 {
-    display: none;
-  }
-  @include Tab{
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../../assets/aproposImg.png);
+
+  @include Tab {
     width: 90%;
   }
 
@@ -111,22 +96,28 @@
     margin-bottom: 1%;
   }
 
-  @include DesktopXL{
+  @include DesktopXL {
     margin-bottom: 3%;
     height: 423px;
-
   }
   /*IMAGE BANNER ABOUT PAGE*/
-  > img {
-    object-position: 50%;
-    border-radius: 10px;
+  .backgroundImgBannerAbout {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(70%) saturate(140%);
-    @include DesktopS {
+    background: #000000;
+    mix-blend-mode: multiply;
+    border-radius: 25px;
+    background-size: cover;
+    > img {
+      object-position: 100%;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include DesktopS {
+        object-position: 0%;
         border-radius: 25px;
+      }
     }
-    
   }
 }

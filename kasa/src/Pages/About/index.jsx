@@ -1,17 +1,12 @@
 import React from 'react'
-import aproposImg from '../../assets/aproposImg.png'
-import '../../styles/sass/layouts/_banner.scss'
-import Dropdowns from '../../components/Collapse'
+import Dropdowns from '../../components/Collapse/Dropdowns'
+import Banner from '../../components/Banner'
 import aproposTextes from '../../datas/aproposlist.json'
 
 function About() {
   return (
     <main className="main-about">
-      <section className="bannerAbout">
-        {/*Section2*/}
-        <h1>A propos de nos services</h1>
-        <img src={aproposImg} alt="paysages alpins" />
-      </section>
+      <Banner />
       <section className="dropdownsAbout">
         {aproposTextes.map((datas, index) => (
           <Dropdowns

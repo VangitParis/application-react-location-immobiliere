@@ -5,8 +5,8 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
-import '../../styles/sass/components/_collapse.scss'
-import '../../styles/sass/pages/_about.scss'
+import '../../../styles/sass/components/_collapse.scss'
+import '../../../styles/sass/pages/_about.scss'
 
 
 export default function Dropdowns({ title, description }) {

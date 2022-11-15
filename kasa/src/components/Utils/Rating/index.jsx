@@ -12,8 +12,12 @@ export default function Rating() {
 
   return (
     <div className="star">
+      {/*Retrouver avec Array les votes depuis le fichier.json, avec une note/5, 
+      Si la note est de 5 = index<parseInt=true remplir les icones star en rouge,
+      sinon ne pas remplir les icones  */}
       {Array.from(Array(5), (e, index) => {
         if (index < parseInt(locationById.rating)) {
+          //console.log(index < parseInt(locationById.rating));
           return (
             <span
               key={`${locationById.id}-${index}`}

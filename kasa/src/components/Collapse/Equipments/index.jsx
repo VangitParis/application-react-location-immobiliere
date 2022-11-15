@@ -1,7 +1,6 @@
-import '../../styles/sass/components/_equipments.scss'
 import { useParams } from 'react-router-dom'
-import accomodations from '../../datas/locationslist.json'
-import Dropdowns from '../Collapse'
+import accomodations from '../../../datas/locationslist.json'
+import Dropdowns from '../Dropdowns'
 
 export default function Equipments() {
   const { id } = useParams()

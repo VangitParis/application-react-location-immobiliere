@@ -427,10 +427,10 @@
 }
 @media screen and (min-width: 1024px) {
   .dropdown__title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    height: 34px;
-    width: 30%;
+    height: 20px;
+    width: 24%;
     left: 18px;
     top: 6px;
     margin-left: 14px;
@@ -442,6 +442,7 @@
 @media screen and (min-width: 1440px) {
   .dropdown__title {
     font-size: 24px;
+    height: 30px;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -458,7 +459,12 @@
 }
 @media screen and (min-width: 1024px) {
   .dropdown svg {
-    width: 20px;
+    width: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dropdown svg {
+    width: 25px;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -556,19 +562,6 @@
 }
 
 /*BREAKPOINTS*/
-/*COLORS*/
-/*FONT*/
-/*-------MEDIA-QUERIES------*/
-/*EQUIPMENTS DROPDOWN*/
-.equipments {
-  line-height: 142.6%;
-}
-
-/*BREAKPOINTS*/
-/*COLORS*/
-/*FONT*/
-/*-------MEDIA-QUERIES------*/
-/*GALLERY*/ /*BREAKPOINTS*/
 /*COLORS*/
 /*FONT*/
 /*-------MEDIA-QUERIES------*/
@@ -808,7 +801,7 @@
   .singleLocation-dropdowns {
     flex-direction: row;
     width: 100%;
-    margin-top: 8%;
+    margin-top: 5%;
     display: flex;
     gap: 40px;
   }
@@ -941,11 +934,8 @@
   /*IMAGE URL BACKGROUND BANNER HOME PAGE*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/homeImg.png");
   background-position: center;
-  display: table-cell; /* comportement visuel de cellule */
-  vertical-align: middle;
-  width: 335px;
+  width: 100%;
   height: 111px;
-  text-align: left;
   border-radius: 10px;
   background-size: cover;
   color: #ffffff;
@@ -954,27 +944,10 @@
   margin-top: 20px;
   /*TITLE BANNER HOME PAGE*/
 }
-@media screen and (width: 320px) {
-  .banner {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 425px) {
-  .banner {
-    width: 375px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .banner {
-    width: 690px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .banner {
     justify-content: center;
     height: 168px;
-    width: 920px;
-    left: 100px;
     top: 171px;
     border-radius: 25px;
   }
@@ -982,12 +955,10 @@
 @media screen and (min-width: 1440px) {
   .banner {
     height: 223px;
-    width: 100%;
   }
 }
 @media screen and (min-width: 2560px) {
   .banner {
-    width: 100%;
     height: 462px;
   }
 }
@@ -998,8 +969,6 @@
   font-weight: 500;
   height: 48px;
   width: 66%;
-  left: 36px;
-  top: 114px;
 }
 @media screen and (width: 320px) {
   .banner__title {
@@ -1051,11 +1020,9 @@
   width: 100%;
   height: 223px;
   background: #f7f7f7;
-  border-radius: 25px;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../assets/aproposImg.png);
   /*IMAGE BANNER ABOUT PAGE*/
-}
-.bannerAbout > h1 {
-  display: none;
 }
 @media screen and (min-width: 768px) {
   .bannerAbout {
@@ -1077,18 +1044,27 @@
     height: 423px;
   }
 }
-.bannerAbout > img {
-  -o-object-position: 50%;
-     object-position: 50%;
+.bannerAbout .backgroundImgBannerAbout {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  mix-blend-mode: multiply;
+  border-radius: 25px;
+  background-size: cover;
+}
+.bannerAbout .backgroundImgBannerAbout > img {
+  -o-object-position: 100%;
+     object-position: 100%;
   border-radius: 10px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(70%) saturate(140%);
 }
 @media screen and (min-width: 1024px) {
-  .bannerAbout > img {
+  .bannerAbout .backgroundImgBannerAbout > img {
+    -o-object-position: 0%;
+       object-position: 0%;
     border-radius: 25px;
   }
 }
@@ -1097,7 +1073,7 @@
 /*COLORS*/
 /*FONT*/
 /*-------MEDIA-QUERIES------*/ /* CARDS - CARDSCONTAINER*/
-.gallery {
+.container {
   height: 805px;
   width: 335px;
   left: 21px;
@@ -1105,23 +1081,23 @@
   border-radius: 0px;
 }
 @media screen and (width: 320px) {
-  .gallery {
+  .container {
     width: 300px;
   }
 }
 @media screen and (min-width: 425px) {
-  .gallery {
+  .container {
     width: 375px;
   }
-  .gallery__background {
+  .container__background {
     width: 375px;
   }
 }
 @media screen and (min-width: 768px) {
-  .gallery {
+  .container {
     width: 690px;
   }
-  .gallery__background {
+  .container__background {
     position: absolute;
     display: flex;
     flex-wrap: WRAP;
@@ -1131,10 +1107,10 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .gallery {
+  .container {
     width: 920px;
   }
-  .gallery__background {
+  .container__background {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -1148,11 +1124,11 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .gallery {
+  .container {
     height: 829px;
     width: 1240px;
   }
-  .gallery__background {
+  .container__background {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -1166,10 +1142,10 @@
   }
 }
 @media screen and (min-width: 2560px) {
-  .gallery {
+  .container {
     width: 100%;
   }
-  .gallery__background {
+  .container__background {
     width: 100%;
     top: 430px;
     padding: 80px 0px 80px 80px;
@@ -1529,21 +1505,50 @@ ul {
   }
 }
 .dropdownsAbout .dropdown__open__description {
-  height: 146%;
+  height: 144px;
   padding-top: 1%;
+}
+@media screen and (min-width: 768px) {
+  .dropdownsAbout .dropdown__open__description {
+    height: 166px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dropdownsAbout .dropdown__open__description {
+    height: 176px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dropdownsAbout .dropdown__open__description {
+    height: 146%;
+    padding-top: 2%;
+  }
 }
 @media screen and (min-width: 2560px) {
   .dropdownsAbout .dropdown__open__description {
     padding-top: 0;
-    height: 146%;
   }
 }
 .dropdownsAbout .dropdown__open__text {
-  height: auto;
+  height: 156px;
+}
+@media screen and (min-width: 1024px) {
+  .dropdownsAbout .dropdown__open__text {
+    height: auto;
+    font-size: 20px;
+    padding-top: 2%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dropdownsAbout .dropdown__open__text {
+    padding-top: 1%;
+    height: 65%;
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 2560px) {
   .dropdownsAbout .dropdown__open__text {
-    font-size: 35px;
+    font-size: 36px;
     margin-left: 1%;
   }
 }
@@ -1817,11 +1822,15 @@ div {
   color: #FF6060;
 }
 
+p {
+  line-height: 142.6%;
+}
+
 a {
   cursor: pointer;
 }
 
-.flex-between {
+.divRatingHost {
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -1831,18 +1840,18 @@ a {
   position: absolute;
 }
 @media screen and (width: 320px) {
-  .flex-between {
+  .divRatingHost {
     width: 93%;
     margin-top: 12%;
   }
 }
 @media screen and (min-width: 425px) {
-  .flex-between {
+  .divRatingHost {
     margin-top: 50px;
   }
 }
 @media screen and (min-width: 768px) {
-  .flex-between {
+  .divRatingHost {
     width: 90%;
     display: flex;
     position: absolute;
@@ -1854,7 +1863,7 @@ a {
   }
 }
 @media screen and (min-width: 1024px) {
-  .flex-between {
+  .divRatingHost {
     width: 90%;
     display: flex;
     flex-direction: column-reverse;
@@ -1864,13 +1873,13 @@ a {
   }
 }
 @media screen and (min-width: 1440px) {
-  .flex-between {
+  .divRatingHost {
     width: 86%;
     margin-top: -3%;
   }
 }
 @media screen and (min-width: 2560px) {
-  .flex-between {
+  .divRatingHost {
     width: 90%;
     margin-top: -2%;
   }

@@ -5,6 +5,7 @@ import logos from '../../../assets/LOGO.svg'
 import { useLocation } from 'react-router-dom'
 
 export default function Footer() {
+  /*Utiliser splitLocation pour styliser le footer selon la page où se trouve l'utilisateur*/
   const location = useLocation()
   const { pathname } = location
   const splitLocation = pathname.split('/')
