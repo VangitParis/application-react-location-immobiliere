@@ -1,6 +1,5 @@
 @import '../utils/mixins';
 
-
 /* HOME PAGE STYLES */
 
 /* MAIN HOME PAGE*/
@@ -13,8 +12,6 @@
   width: 90%;
   position: absolute;
   top: 70px;
- 
- 
 
   @include MobileS {
     width: 94%;
@@ -35,7 +32,6 @@
     top: 90px;
   }
   @include Desktop {
-    
     width: 86%;
     top: 130px;
   }
@@ -43,19 +39,5 @@
   @include DesktopXL {
     width: 90%;
     top: 190px;
-    
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

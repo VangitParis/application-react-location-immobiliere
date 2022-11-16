@@ -20,14 +20,14 @@ export default function Carousel({ pictures }) {
         }}
       >
         <FontAwesomeIcon icon={faChevronLeft} />
-         {/*si le logement ne contient qu'une seule image on reste sur item*/}
+        {/*si le logement ne contient qu'une seule image on reste sur item*/}
       </button>
       <img
         src={pictures[item]}
         alt="appartement à louer"
         className="carousel__img"
       />
-      { /*A chaque changement d'image, on ajoute la pagination qui boucle sur pictures.length 
+      {/*A chaque changement d'image, on ajoute la pagination qui boucle sur pictures.length 
       et on commence à item+1*/}
       <p className="carousel__bulletpoint">
         {item + 1}/{pictures.length}

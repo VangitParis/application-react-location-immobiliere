@@ -6,7 +6,7 @@
 @import './components/tags';
 @import './layouts/banner';
 @import './components/cardsContainer';
-@import'./layouts/footer';
+@import './layouts/footer';
 @import './layouts/header';
 @import './pages/about';
 @import './pages/details';
@@ -14,50 +14,7 @@
 @import './pages/home';
 @import './utils/mixins';
 @import './utils/variables';
-
-* {
-  box-sizing: border-box;
-  font-family: 'Montserrat', Helvetica, sans-serif;
-
-  padding: 0;
-  margin: 0;
-}
-#root {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  align-items: center;
-}
-
-body,
-html {
-  margin: 0 auto;
-  font-family: $main-font;
-  position: relative;
-  max-width: 100%;
-  align-content: center;
-}
-main {
-  margin-left: 10px;
-  margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @include MobileS {
-    margin-left: 3%;
-  }
-  @include Desktop {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  @include DesktopXL {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
+@import './base/normes';
 
 h3,
 a,
@@ -65,57 +22,13 @@ p,
 div {
   color: $color-primary;
 }
-p{
+p {
   line-height: 142.6%;
 }
 a {
   cursor: pointer;
 }
 
-.divRatingHost {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; 
-  margin-top: 10%;
-  position: absolute;
-  @include MobileS{
-    width: 93%;
-    margin-top: 12%;
-  }
-  @include MobileL{
-    margin-top: 50px;
-  }
-  @include Tab{
-    width: 90%;
-    display: flex;
-    position: absolute;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: -7%;
-    height: 58px;
-  }
-  @include DesktopS {
-    width: 90%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: -4%;
-  }
-  @include Desktop {
-    width: 86%;
-    margin-top: -3%;
-    //margin-bottom: 100px;
-  }
-  @include DesktopXL {
-    width: 90%;
-    margin-top: -2%;
-    //margin-bottom: 100px;
-  }
-}
 .flex {
   display: flex;
   justify-content: space-between;
@@ -152,8 +65,8 @@ ul li a {
   text-decoration: underline;
   color: $color-primary;
 }
-br{
-  @include DesktopS{
+br {
+  @include DesktopS {
     display: none;
   }
 }

@@ -4,24 +4,21 @@
 .banner {
   background-color: #000000;
   /*IMAGE URL BACKGROUND BANNER HOME PAGE*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: $background-Gradient-Banner,
     url('../../../assets/homeImg.png');
   background-position: center;
-
+  background-size: cover;
   width: 100%;
   height: 111px;
-
   border-radius: 10px;
   background-size: cover;
   color: #ffffff;
   display: flex;
   align-items: center;
   margin-top: 20px;
-
   @include DesktopS {
     justify-content: center;
     height: 168px;
-
     top: 171px;
     border-radius: 25px;
   }
@@ -39,7 +36,6 @@
     font-weight: 500;
     height: 48px;
     width: 66%;
-
     @include MobileS {
       width: 71%;
     }
@@ -81,13 +77,13 @@
   height: 223px;
   background: #f7f7f7;
   border-radius: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: $background-Gradient-Banner,
     url(../../../assets/aproposImg.png);
-
+  background-position: right;
   @include Tab {
     width: 90%;
+    background-position: left;
   }
-
   @include DesktopS {
     margin-top: 0;
     width: 100%;
@@ -95,7 +91,6 @@
     height: 223px;
     margin-bottom: 1%;
   }
-
   @include DesktopXL {
     margin-bottom: 3%;
     height: 423px;
@@ -108,16 +103,5 @@
     mix-blend-mode: multiply;
     border-radius: 25px;
     background-size: cover;
-    > img {
-      object-position: 100%;
-      border-radius: 10px;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      @include DesktopS {
-        object-position: 0%;
-        border-radius: 25px;
-      }
-    }
   }
 }

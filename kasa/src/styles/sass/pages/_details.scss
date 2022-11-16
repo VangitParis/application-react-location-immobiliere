@@ -2,35 +2,31 @@
 @import '../utils/variables';
 
 /* DETAILS PAGE STYLES */
-.details{
-  &__main{
+.details {
+  &__main {
     height: auto;
     width: 90%;
     left: 20px;
     margin-top: 17px;
     margin-bottom: 100px;
-    @include MobileS{
+    @include MobileS {
       width: 94%;
     }
-    @include MobileL{
+    @include MobileL {
       width: 90%;
     }
-    @include Tab{
+    @include Tab {
       width: 90%;
     }
-    @include DesktopS{
+    @include DesktopS {
       width: 90%;
-     
-  }
-    
-    @include Desktop{
-      width: 86%;
-      
+    }
 
+    @include Desktop {
+      width: 86%;
     }
-    @include DesktopXL{
+    @include DesktopXL {
       width: 90%;
     }
   }
-  
 }

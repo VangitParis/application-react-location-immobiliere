@@ -15,7 +15,7 @@ export default function Footer() {
   return splitLocation[1] ? (
     <footer
       className={
-        splitLocation[1] === 'details' || 'about' 
+        splitLocation[1] === 'details' || 'about'
           ? 'footerDetails footerAbout footerError'
           : ''
       }

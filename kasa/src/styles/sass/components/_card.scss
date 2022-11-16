@@ -92,18 +92,17 @@
     right: 5.88%;
     top: 73.73%;
     bottom: 5.88%;
-    @include Tab{
-        font-size: 15px;
+    @include Tab {
+      font-size: 15px;
     }
-    @include DesktopS{
-        font-size: 14px;
+    @include DesktopS {
+      font-size: 14px;
     }
-    @include Desktop{
-        font-size: 18px;
+    @include Desktop {
+      font-size: 18px;
     }
 
     @include DesktopXL {
-      
       font-size: 28px;
       height: 100px;
     }

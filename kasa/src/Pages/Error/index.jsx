@@ -7,7 +7,8 @@ export default function Error() {
     <main className="error">
       <div className="error__404">404</div>
       <h1 className="error__title ">
-       Oups! La page que <br />vous demandez n'existe pas.
+        Oups! La page que <br />
+        vous demandez n'existe pas.
       </h1>
 
       <Link to="/" className="error__backText">

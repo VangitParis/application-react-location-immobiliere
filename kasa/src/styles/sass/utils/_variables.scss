@@ -1,24 +1,29 @@
-
 /*BREAKPOINTS*/
 $breakpoints: (
-    DesktopXL: 2560px,
-    Desktop: 1440px,
-    DesktopS : 1024px,
-    Tab: 768px,
-    MobileL : 425px,
-    MobileS: 320px,
-    DesktopMax:2558px
-    );
+  DesktopXL: 2560px,
+  Desktop: 1440px,
+  DesktopS: 1024px,
+  Tab: 768px,
+  MobileL: 425px,
+  MobileS: 320px,
+  DesktopMax: 2558px,
+);
 
 /*COLORS*/
-$color-primary:  #FF6060;
-$color-secondary: #F7F7F7;
-$color-tertiary :#E3E3E3;
-$color-white: #FFFFFF;
-$background-Gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-$background-color-img: #FF6060;
-$image-color:black;
+$color-primary: #ff6060;
+$color-secondary: #f7f7f7;
+$color-tertiary: #e3e3e3;
+$color-white: #ffffff;
+$background-Gradient: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
+$background-Gradient-Banner: linear-gradient(
+  rgba(0, 0, 0, 0.3),
+  rgba(0, 0, 0, 0.3)
+);
+$background-color-img: #ff6060;
+$image-color: black;
 /*FONT*/
 $main-font: 'Montserrat', sans-serif;
-
-

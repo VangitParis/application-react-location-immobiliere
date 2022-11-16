@@ -20,9 +20,8 @@
     color: $color-primary;
     margin-top: 50%;
     width: 100%;
-    @include Tab{
+    @include Tab {
       margin-top: 20%;
-
     }
     @include DesktopS {
       font-size: 148px;

@@ -8,7 +8,7 @@
   padding-left: 0;
   justify-content: space-between;
 
-  @include Tab{
+  @include Tab {
     width: 14%;
     margin-top: 1%;
   }
@@ -19,7 +19,7 @@
   @include Desktop {
     width: 14%;
   }
-  
+
   &__completed {
     color: $color-primary;
   }
@@ -29,7 +29,6 @@
   /* STARS SVG */
   &__noCompleted,
   &__completed {
-    
     > svg {
       height: 15px;
       width: 15px;
@@ -41,7 +40,7 @@
         left: 3px;
         top: 3px;
       }
-      @include DesktopXL{
+      @include DesktopXL {
         height: 50px;
         width: 50px;
       }

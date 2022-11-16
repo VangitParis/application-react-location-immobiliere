@@ -12,7 +12,7 @@
     width: 100%;
     height: 53px;
   }
-  @include Tab{
+  @include Tab {
     height: 63px;
   }
   @include DesktopS {
@@ -24,9 +24,7 @@
   }
   /*TITLE SINGLELOCATION DETAILS PAGE*/
   &__title {
-    
     width: 100%;
-    
 
     @include Desktop {
       height: 51px;
@@ -36,7 +34,7 @@
       left: 100px;
       top: 573px;
     }
-    @include DesktopXL{
+    @include DesktopXL {
       height: 115px;
     }
     /*TEXT SINGLELOCATION DETAILS PAGE*/
@@ -47,7 +45,7 @@
         font-size: 36px;
         margin-bottom: 0;
       }
-      @include DesktopXL{
+      @include DesktopXL {
         font-size: 62px;
       }
     }
@@ -68,7 +66,6 @@
       font-size: 36px;
       height: 40px;
     }
-
   }
   /*TAGS SINGLELOCATION DETAILS PAGE*/
   &__tags {
@@ -77,10 +74,10 @@
     left: 20px;
     top: 447px;
     margin-top: 2%;
-    @include MobileL{
+    @include MobileL {
       width: 47%;
     }
-    @include Tab{
+    @include Tab {
       width: 27%;
     }
     @include DesktopS {
@@ -120,10 +117,10 @@
   width: 40%;
   left: 219px;
   top: 481px;
-  @include MobileS{
+  @include MobileS {
     width: 44%;
   }
-  @include Tab{
+  @include Tab {
     width: 20%;
   }
   @include DesktopS {
@@ -144,9 +141,7 @@
     font-size: 12px;
 
     @include DesktopS {
- 
       font-size: 14px;
-     
     }
     @include Desktop {
       width: 48%;
@@ -159,7 +154,6 @@
       font-size: 36px;
       height: 72px;
       line-height: 39px;
-     
     }
   }
   /*IMG HOST (AVATAR) SINGLELOCATION DETAILS PAGE*/
@@ -175,42 +169,64 @@
       height: 64px;
       width: 64px;
     }
-    @include DesktopXL{
+    @include DesktopXL {
       height: 84px;
       width: 84px;
     }
   }
 }
-// .singleLocation-section {
-//   @include Desktop {
-//     display: flex;
-//     height: 101px;
-//     width: 1240px;
-//     left: 100px;
-//     top: 670px;
-//     border-radius: 0px;
-//   }
-// }
-// .singleLocation-tags-dropdowns {
-//   width: 335px;
-//   border-radius: 10px;
-//   margin-top: 30px;
-//   @include DesktopS {
-//     flex-direction: row;
-
-//     width: 582px;
-//     left: 0px;
-//     top: 0px;
-//   }
-// }
+.divRatingHost {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+  position: absolute;
+  @include MobileS {
+    width: 93%;
+    margin-top: 12%;
+  }
+  @include MobileL {
+    margin-top: 50px;
+  }
+  @include Tab {
+    width: 90%;
+    display: flex;
+    position: absolute;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -7%;
+    height: 58px;
+  }
+  @include DesktopS {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -4%;
+  }
+  @include Desktop {
+    width: 86%;
+    margin-top: -3%;
+    //margin-bottom: 100px;
+  }
+  @include DesktopXL {
+    width: 90%;
+    margin-top: -2%;
+    //margin-bottom: 100px;
+  }
+}
 .singleLocation-dropdowns {
   display: flex;
   flex-direction: column;
   margin-top: 20%;
-  @include MobileS{
+  @include MobileS {
     margin-top: 30%;
   }
-  @include Tab{
+  @include Tab {
     flex-direction: row;
     width: 100%;
     margin-top: 2%;
@@ -224,10 +240,10 @@
     display: flex;
     gap: 40px;
   }
-  @include Desktop{
+  @include Desktop {
     margin-top: 5%;
   }
-  @include DesktopXL{
+  @include DesktopXL {
     margin-top: 7%;
   }
 }

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+body,
+html {
+  margin: 0 auto;
+  font-family: $main-font;
+  position: relative;
+  max-width: 100%;
+  align-content: center;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include MobileS {
+      margin-left: 3%;
+    }
+    @include Desktop {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @include DesktopXL {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }

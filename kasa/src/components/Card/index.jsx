@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import '../../styles/sass/components/_card.scss'
 import { Link } from 'react-router-dom'
 
-
-export default function Card({ title, cover, id}) {
-  
+export default function Card({ title, cover, id }) {
   return (
     //article : figure = img + figcaption
 

@@ -15,7 +15,7 @@ export default function SingleLocation() {
 
   return (
     <>
-    {/*singleLocation représente un seul logement sur la page Détails*/}
+      {/*singleLocation représente un seul logement sur la page Détails*/}
       <section className="singleLocation">
         {/*Titre et Lieu du logement */}
         <div className="singleLocation__title">
@@ -39,9 +39,9 @@ export default function SingleLocation() {
         </div>
       </section>
       <section className="singleLocation-dropdowns">
-        {/*Ajouter le collapse dropdown*/} 
+        {/*Ajouter le collapse dropdown*/}
         <Dropdowns title="Description" description={locationById.description} />
-        {/*Ajouter le collapse equipments */} 
+        {/*Ajouter le collapse equipments */}
         <Equipments />
       </section>
     </>

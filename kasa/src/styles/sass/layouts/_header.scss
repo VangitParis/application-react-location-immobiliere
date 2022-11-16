@@ -10,13 +10,13 @@
   margin-top: 20px;
   border-radius: 0px;
   @include MobileS {
-  width: 94%;
+    width: 94%;
   }
   @include MobileL {
-  width: 89%;
+    width: 89%;
   }
   @include Tab {
-  width: 90%;
+    width: 90%;
   }
   @include DesktopS {
     width: 90%;
@@ -79,7 +79,7 @@
     //margin-top: 15px;
     @include MobileS {
       left: 50%;
-    width: 47%;
+      width: 47%;
     }
     @include MobileL {
       left: 58%;
@@ -95,7 +95,6 @@
       width: 23%;
       left: 73%;
       top: 40px;
-    
     }
     @include Desktop {
       height: 34px;

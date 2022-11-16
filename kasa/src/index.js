@@ -9,9 +9,7 @@ import 'normalize.css'
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
-root.render(
-  // RENDER EST UNE METHODE A LAQUELLE ON PASSE NOS ARGUMENTS
- 
+root.render(          // RENDER EST UNE METHODE A LAQUELLE ON PASSE NOS ARGUMENTS
   <React.StrictMode>
   <BrowserRouter>
       <Header />
@@ -19,5 +17,4 @@ root.render(
       <Footer />
   </BrowserRouter>
   </React.StrictMode>
-  
 )
