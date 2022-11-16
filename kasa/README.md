@@ -20,6 +20,11 @@ Dans le répertoire du projet, vous pouvez exécuter :
 Exécute l'application en mode développement.
 Ouvrez http://localhost:3000 pour l'afficher dans votre navigateur.
 
+## Directory 
+# Retrouvez le code React de l'application 
+Code React de l'application dans le dossier src 
+Code React Router dans le dossier src/components/Router/App
+
 
 
 
