@@ -80,11 +80,13 @@
   background-image: $background-Gradient-Banner,
     url(../../../assets/aproposImg.png);
   background-position: right;
+  background-size: cover;
   @include Tab {
     width: 90%;
-    background-position: left;
+   
   }
   @include DesktopS {
+    background-position: left;
     margin-top: 0;
     width: 100%;
     border-radius: 25px;
