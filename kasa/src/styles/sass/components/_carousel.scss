@@ -80,7 +80,7 @@
     border: none;
     z-index: 2;
     @include DesktopS{
-      width: 34px;
+      width: 30px;
 
     }
     /*CHEVRON LEFT BUTTON CAROUSEL*/
@@ -96,7 +96,7 @@
       }
       @include Desktop {
         top: 200px;
-        margin-right: -39px;
+        margin-right: -45px;
       }
       @include DesktopXL {
         margin-right: -85px;
@@ -112,7 +112,7 @@
       @include Desktop {
         top: 200px;
         left: 305px;
-        margin-left: -39px;
+        margin-left: -45px;
       }
       @include DesktopXL {
         margin-left: -85px;
@@ -125,6 +125,14 @@
       left: 17.5px;
       top: 22px;
       color: #ffffff;
+      @include MobileL{
+        width: 25px;
+        height: 25px;
+      }
+      @include Tab{
+        height: 30px;
+        width: 37px;
+      }
       @include DesktopS{
         height: 49px;
         width: 47px;
