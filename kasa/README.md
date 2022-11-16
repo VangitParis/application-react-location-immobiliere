@@ -8,7 +8,7 @@
 
 Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
 
-# Objectif : 
+## Objectif : 
 Refonte frontend du site existant avec React.
 
 
@@ -20,13 +20,11 @@ Dans le répertoire du projet, vous pouvez exécuter :
 Exécute l'application en mode développement.
 Ouvrez http://localhost:3000 pour l'afficher dans votre navigateur.
 
-# Directory 
+## Directory 
 ## Retrouvez le code React de l'application 
 Code React de l'application dans le dossier src 
+
 Code React Router dans le dossier src/components/Router/App
-
-
-
 
 
 
