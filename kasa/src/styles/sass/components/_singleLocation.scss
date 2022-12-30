@@ -131,6 +131,9 @@
 
     margin-bottom: 10px;
   }
+  @include Desktop{
+    margin-bottom: 0;
+  }
   /*NAME HOST SINGLELOCATION DETAILS PAGE*/
   &__name {
     text-align: right;
