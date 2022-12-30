@@ -31,10 +31,10 @@
 
     @include Desktop {
       width: 100%;
-      height: 100%;
+      height: 420px;
     }
     @include DesktopXL {
-      height: 100%;
+      height: 720px;
     }
   }
   /*PAGINATION CAROUSEL*/
