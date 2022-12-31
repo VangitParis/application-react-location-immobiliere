@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from '../../pages/Home'
-import About from '../../pages/About'
-import Details from '../../pages/Details'
-import Error from '../../pages/Error'
+import Home from '../../Pages/Home'
+import About from '../../Pages/About'
+import Details from '../../Pages/Details'
+import Error from '../../Pages/Error'
 
 function App() {
   return (
