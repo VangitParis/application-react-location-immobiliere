@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f030d3a6.css",
+    "main.js": "/static/js/main.6b8c810c.js",
+    "static/media/aproposImg.png": "/static/media/aproposImg.730e48462a0f275b75ef.png",
+    "static/media/homeImg.png": "/static/media/homeImg.40371f11171ba050e175.png",
+    "static/media/LOGO.svg": "/static/media/LOGO.bb878ce7754bb5373a6b5d866c24b736.svg",
+    "index.html": "/index.html",
+    "main.f030d3a6.css.map": "/static/css/main.f030d3a6.css.map",
+    "main.6b8c810c.js.map": "/static/js/main.6b8c810c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f030d3a6.css",
+    "static/js/main.6b8c810c.js"
+  ]
+}
