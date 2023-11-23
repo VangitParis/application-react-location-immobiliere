@@ -11,7 +11,7 @@ const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 root.render(          // RENDER EST UNE METHODE A LAQUELLE ON PASSE NOS ARGUMENTS
   <React.StrictMode>
-  <BrowserRouter>
+  <BrowserRouter basename="/application-react-location-immobiliere">
       <Header />
       <App />
       <Footer />
